@@ -1,0 +1,2203 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Application.properties全配置（下）, 一人行者">
+    <meta name="description" content="CrissMagicBlog">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Application.properties全配置（下） | 一人行者</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="一人行者" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一人行者</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一人行者</div>
+        <div class="logo-desc">
+            
+            CrissMagicBlog
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Application.properties全配置（下）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                                <span class="chip bg-color">后端</span>
+                            </a>
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                后端技术
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-10-21
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    14.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    91 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <pre class="line-numbers language-none"><code class="language-none"># ----------------------------------------  
+# DATA PROPERTIES  
+# ----------------------------------------  
+    
+# FLYWAY (FlywayProperties)  
+spring.flyway.baseline-description&#x3D;&lt;&lt; Flyway Baseline &gt;&gt; # Description to tag an existing schema with when applying a baseline.  
+spring.flyway.baseline-on-migrate&#x3D;false # Whether to automatically call baseline when migrating a non-empty schema.  
+spring.flyway.baseline-version&#x3D;1 # Version to tag an existing schema with when executing baseline.  
+spring.flyway.check-location&#x3D;true # Whether to check that migration scripts location exists.  
+spring.flyway.clean-disabled&#x3D;false # Whether to disable cleaning of the database.  
+spring.flyway.clean-on-validation-error&#x3D;false # Whether to automatically call clean when a validation error occurs.  
+spring.flyway.connect-retries&#x3D;0 # Maximum number of retries when attempting to connect to the database.  
+spring.flyway.enabled&#x3D;true # Whether to enable flyway.  
+spring.flyway.encoding&#x3D;UTF-8 # Encoding of SQL migrations.  
+spring.flyway.group&#x3D;false # Whether to group all pending migrations together in the same transaction when applying them.  
+spring.flyway.ignore-future-migrations&#x3D;true # Whether to ignore future migrations when reading the schema history table.  
+spring.flyway.ignore-ignored-migrations&#x3D;false # Whether to ignore ignored migrations when reading the schema history table.  
+spring.flyway.ignore-missing-migrations&#x3D;false # Whether to ignore missing migrations when reading the schema history table.  
+spring.flyway.ignore-pending-migrations&#x3D;false # Whether to ignore pending migrations when reading the schema history table.  
+spring.flyway.init-sqls&#x3D; # SQL statements to execute to initialize a connection immediately after obtaining it.  
+spring.flyway.installed-by&#x3D; # Username recorded in the schema history table as having applied the migration.  
+spring.flyway.locations&#x3D;classpath:db&#x2F;migration # Locations of migrations scripts. Can contain the special &quot;&#123;vendor&#125;&quot; placeholder to use vendor-specific locations.  
+spring.flyway.mixed&#x3D;false # Whether to allow mixing transactional and non-transactional statements within the same migration.  
+spring.flyway.out-of-order&#x3D;false # Whether to allow migrations to be run out of order.  
+spring.flyway.password&#x3D; # Login password of the database to migrate.  
+spring.flyway.placeholder-prefix&#x3D;$&#123; # Prefix of placeholders in migration scripts.  
+spring.flyway.placeholder-replacement&#x3D;true # Perform placeholder replacement in migration scripts.  
+spring.flyway.placeholder-suffix&#x3D;&#125; # Suffix of placeholders in migration scripts.  
+spring.flyway.placeholders&#x3D; # Placeholders and their replacements to apply to sql migration scripts.  
+spring.flyway.repeatable-sql-migration-prefix&#x3D;R # File name prefix for repeatable SQL migrations.  
+spring.flyway.schemas&#x3D; # Scheme names managed by Flyway (case-sensitive).  
+spring.flyway.skip-default-callbacks&#x3D;false # Whether to skip default callbacks. If true, only custom callbacks are used.  
+spring.flyway.skip-default-resolvers&#x3D;false # Whether to skip default resolvers. If true, only custom resolvers are used.  
+spring.flyway.sql-migration-prefix&#x3D;V # File name prefix for SQL migrations.  
+spring.flyway.sql-migration-separator&#x3D;__ # File name separator for SQL migrations.  
+spring.flyway.sql-migration-suffixes&#x3D;.sql # File name suffix for SQL migrations.  
+spring.flyway.table&#x3D;flyway_schema_history # Name of the schema schema history table that will be used by Flyway.  
+spring.flyway.target&#x3D; # Target version up to which migrations should be considered.  
+spring.flyway.url&#x3D; # JDBC url of the database to migrate. If not set, the primary configured data source is used.  
+spring.flyway.user&#x3D; # Login user of the database to migrate.  
+spring.flyway.validate-on-migrate&#x3D;true # Whether to automatically call validate when performing a migration.  
+    
+# LIQUIBASE (LiquibaseProperties)  
+spring.liquibase.change-log&#x3D;classpath:&#x2F;db&#x2F;changelog&#x2F;db.changelog-master.yaml # Change log configuration path.  
+spring.liquibase.check-change-log-location&#x3D;true # Whether to check that the change log location exists.  
+spring.liquibase.contexts&#x3D; # Comma-separated list of runtime contexts to use.  
+spring.liquibase.database-change-log-lock-table&#x3D;DATABASECHANGELOGLOCK # Name of table to use for tracking concurrent Liquibase usage.  
+spring.liquibase.database-change-log-table&#x3D;DATABASECHANGELOG # Name of table to use for tracking change history.  
+spring.liquibase.default-schema&#x3D; # Default database schema.  
+spring.liquibase.drop-first&#x3D;false # Whether to first drop the database schema.  
+spring.liquibase.enabled&#x3D;true # Whether to enable Liquibase support.  
+spring.liquibase.labels&#x3D; # Comma-separated list of runtime labels to use.  
+spring.liquibase.liquibase-schema&#x3D; # Schema to use for Liquibase objects.  
+spring.liquibase.liquibase-tablespace&#x3D; # Tablespace to use for Liquibase objects.  
+spring.liquibase.parameters.*&#x3D; # Change log parameters.  
+spring.liquibase.password&#x3D; # Login password of the database to migrate.  
+spring.liquibase.rollback-file&#x3D; # File to which rollback SQL is written when an update is performed.  
+spring.liquibase.test-rollback-on-update&#x3D;false # Whether rollback should be tested before update is performed.  
+spring.liquibase.url&#x3D; # JDBC URL of the database to migrate. If not set, the primary configured data source is used.  
+spring.liquibase.user&#x3D; # Login user of the database to migrate.  
+    
+# COUCHBASE (CouchbaseProperties)  
+spring.couchbase.bootstrap-hosts&#x3D; # Couchbase nodes (host or IP address) to bootstrap from.  
+spring.couchbase.bucket.name&#x3D;default # Name of the bucket to connect to.  
+spring.couchbase.bucket.password&#x3D;  # Password of the bucket.  
+spring.couchbase.env.endpoints.key-value&#x3D;1 # Number of sockets per node against the key&#x2F;value service.  
+spring.couchbase.env.endpoints.queryservice.min-endpoints&#x3D;1 # Minimum number of sockets per node.  
+spring.couchbase.env.endpoints.queryservice.max-endpoints&#x3D;1 # Maximum number of sockets per node.  
+spring.couchbase.env.endpoints.viewservice.min-endpoints&#x3D;1 # Minimum number of sockets per node.  
+spring.couchbase.env.endpoints.viewservice.max-endpoints&#x3D;1 # Maximum number of sockets per node.  
+spring.couchbase.env.ssl.enabled&#x3D; # Whether to enable SSL support. Enabled automatically if a &quot;keyStore&quot; is provided unless specified otherwise.  
+spring.couchbase.env.ssl.key-store&#x3D; # Path to the JVM key store that holds the certificates.  
+spring.couchbase.env.ssl.key-store-password&#x3D; # Password used to access the key store.  
+spring.couchbase.env.timeouts.connect&#x3D;5000ms # Bucket connections timeouts.  
+spring.couchbase.env.timeouts.key-value&#x3D;2500ms # Blocking operations performed on a specific key timeout.  
+spring.couchbase.env.timeouts.query&#x3D;7500ms # N1QL query operations timeout.  
+spring.couchbase.env.timeouts.socket-connect&#x3D;1000ms # Socket connect connections timeout.  
+spring.couchbase.env.timeouts.view&#x3D;7500ms # Regular and geospatial view operations timeout.  
+    
+# DAO (PersistenceExceptionTranslationAutoConfiguration)  
+spring.dao.exceptiontranslation.enabled&#x3D;true # Whether to enable the PersistenceExceptionTranslationPostProcessor.  
+    
+# CASSANDRA (CassandraProperties)  
+spring.data.cassandra.cluster-name&#x3D; # Name of the Cassandra cluster.  
+spring.data.cassandra.compression&#x3D;none # Compression supported by the Cassandra binary protocol.  
+spring.data.cassandra.connect-timeout&#x3D; # Socket option: connection time out.  
+spring.data.cassandra.consistency-level&#x3D; # Queries consistency level.  
+spring.data.cassandra.contact-points&#x3D;localhost # Cluster node addresses.  
+spring.data.cassandra.fetch-size&#x3D; # Queries default fetch size.  
+spring.data.cassandra.jmx-enabled&#x3D;false # Whether to enable JMX reporting.  
+spring.data.cassandra.keyspace-name&#x3D; # Keyspace name to use.  
+spring.data.cassandra.port&#x3D; # Port of the Cassandra server.  
+spring.data.cassandra.password&#x3D; # Login password of the server.  
+spring.data.cassandra.pool.heartbeat-interval&#x3D;30s # Heartbeat interval after which a message is sent on an idle connection to make sure it&#39;s still alive. If a duration suffix is not specified, seconds will be used.  
+spring.data.cassandra.pool.idle-timeout&#x3D;120s # Idle timeout before an idle connection is removed. If a duration suffix is not specified, seconds will be used.  
+spring.data.cassandra.pool.max-queue-size&#x3D;256 # Maximum number of requests that get queued if no connection is available.  
+spring.data.cassandra.pool.pool-timeout&#x3D;5000ms # Pool timeout when trying to acquire a connection from a host&#39;s pool.  
+spring.data.cassandra.read-timeout&#x3D; # Socket option: read time out.  
+spring.data.cassandra.repositories.type&#x3D;auto # Type of Cassandra repositories to enable.  
+spring.data.cassandra.serial-consistency-level&#x3D; # Queries serial consistency level.  
+spring.data.cassandra.schema-action&#x3D;none # Schema action to take at startup.  
+spring.data.cassandra.ssl&#x3D;false # Enable SSL support.  
+spring.data.cassandra.username&#x3D; # Login user of the server.  
+    
+# DATA COUCHBASE (CouchbaseDataProperties)  
+spring.data.couchbase.auto-index&#x3D;false # Automatically create views and indexes.  
+spring.data.couchbase.consistency&#x3D;read-your-own-writes # Consistency to apply by default on generated queries.  
+spring.data.couchbase.repositories.type&#x3D;auto # Type of Couchbase repositories to enable.  
+    
+# ELASTICSEARCH (ElasticsearchProperties)  
+spring.data.elasticsearch.cluster-name&#x3D;elasticsearch # Elasticsearch cluster name.  
+spring.data.elasticsearch.cluster-nodes&#x3D; # Comma-separated list of cluster node addresses.  
+spring.data.elasticsearch.properties.*&#x3D; # Additional properties used to configure the client.  
+spring.data.elasticsearch.repositories.enabled&#x3D;true # Whether to enable Elasticsearch repositories.  
+    
+# DATA JDBC  
+spring.data.jdbc.repositories.enabled&#x3D;true # Whether to enable JDBC repositories.  
+    
+# DATA LDAP  
+spring.data.ldap.repositories.enabled&#x3D;true # Whether to enable LDAP repositories.  
+    
+# MONGODB (MongoProperties)  
+spring.data.mongodb.authentication-database&#x3D; # Authentication database name.  
+spring.data.mongodb.database&#x3D; # Database name.  
+spring.data.mongodb.field-naming-strategy&#x3D; # Fully qualified name of the FieldNamingStrategy to use.  
+spring.data.mongodb.grid-fs-database&#x3D; # GridFS database name.  
+spring.data.mongodb.host&#x3D; # Mongo server host. Cannot be set with URI.  
+spring.data.mongodb.password&#x3D; # Login password of the mongo server. Cannot be set with URI.  
+spring.data.mongodb.port&#x3D; # Mongo server port. Cannot be set with URI.  
+spring.data.mongodb.repositories.type&#x3D;auto # Type of Mongo repositories to enable.  
+spring.data.mongodb.uri&#x3D;mongodb:&#x2F;&#x2F;localhost&#x2F;test # Mongo database URI. Cannot be set with host, port and credentials.  
+spring.data.mongodb.username&#x3D; # Login user of the mongo server. Cannot be set with URI.  
+    
+# DATA REDIS  
+spring.data.redis.repositories.enabled&#x3D;true # Whether to enable Redis repositories.  
+    
+# NEO4J (Neo4jProperties)  
+spring.data.neo4j.auto-index&#x3D;none # Auto index mode.  
+spring.data.neo4j.embedded.enabled&#x3D;true # Whether to enable embedded mode if the embedded driver is available.  
+spring.data.neo4j.open-in-view&#x3D;true # Register OpenSessionInViewInterceptor. Binds a Neo4j Session to the thread for the entire processing of the request.  
+spring.data.neo4j.password&#x3D; # Login password of the server.  
+spring.data.neo4j.repositories.enabled&#x3D;true # Whether to enable Neo4j repositories.  
+spring.data.neo4j.uri&#x3D; # URI used by the driver. Auto-detected by default.  
+spring.data.neo4j.username&#x3D; # Login user of the server.  
+    
+# DATA REST (RepositoryRestProperties)  
+spring.data.rest.base-path&#x3D; # Base path to be used by Spring Data REST to expose repository resources.  
+spring.data.rest.default-media-type&#x3D; # Content type to use as a default when none is specified.  
+spring.data.rest.default-page-size&#x3D; # Default size of pages.  
+spring.data.rest.detection-strategy&#x3D;default # Strategy to use to determine which repositories get exposed.  
+spring.data.rest.enable-enum-translation&#x3D; # Whether to enable enum value translation through the Spring Data REST default resource bundle.  
+spring.data.rest.limit-param-name&#x3D; # Name of the URL query string parameter that indicates how many results to return at once.  
+spring.data.rest.max-page-size&#x3D; # Maximum size of pages.  
+spring.data.rest.page-param-name&#x3D; # Name of the URL query string parameter that indicates what page to return.  
+spring.data.rest.return-body-on-create&#x3D; # Whether to return a response body after creating an entity.  
+spring.data.rest.return-body-on-update&#x3D; # Whether to return a response body after updating an entity.  
+spring.data.rest.sort-param-name&#x3D; # Name of the URL query string parameter that indicates what direction to sort results.  
+    
+# SOLR (SolrProperties)  
+spring.data.solr.host&#x3D;http:&#x2F;&#x2F;127.0.0.1:8983&#x2F;solr # Solr host. Ignored if &quot;zk-host&quot; is set.  
+spring.data.solr.repositories.enabled&#x3D;true # Whether to enable Solr repositories.  
+spring.data.solr.zk-host&#x3D; # ZooKeeper host address in the form HOST:PORT.  
+    
+# DATA WEB (SpringDataWebProperties)  
+spring.data.web.pageable.default-page-size&#x3D;20 # Default page size.  
+spring.data.web.pageable.max-page-size&#x3D;2000 # Maximum page size to be accepted.  
+spring.data.web.pageable.one-indexed-parameters&#x3D;false # Whether to expose and assume 1-based page number indexes.  
+spring.data.web.pageable.page-parameter&#x3D;page # Page index parameter name.  
+spring.data.web.pageable.prefix&#x3D; # General prefix to be prepended to the page number and page size parameters.  
+spring.data.web.pageable.qualifier-delimiter&#x3D;_ # Delimiter to be used between the qualifier and the actual page number and size properties.  
+spring.data.web.pageable.size-parameter&#x3D;size # Page size parameter name.  
+spring.data.web.sort.sort-parameter&#x3D;sort # Sort parameter name.  
+    
+# DATASOURCE (DataSourceAutoConfiguration &amp; DataSourceProperties)  
+spring.datasource.continue-on-error&#x3D;false # Whether to stop if an error occurs while initializing the database.  
+spring.datasource.data&#x3D; # Data (DML) script resource references.  
+spring.datasource.data-username&#x3D; # Username of the database to execute DML scripts (if different).  
+spring.datasource.data-password&#x3D; # Password of the database to execute DML scripts (if different).  
+spring.datasource.dbcp2.*&#x3D; # Commons DBCP2 specific settings  
+spring.datasource.driver-class-name&#x3D; # Fully qualified name of the JDBC driver. Auto-detected based on the URL by default.  
+spring.datasource.generate-unique-name&#x3D;false # Whether to generate a random datasource name.  
+spring.datasource.hikari.*&#x3D; # Hikari specific settings  
+spring.datasource.initialization-mode&#x3D;embedded # Initialize the datasource with available DDL and DML scripts.  
+spring.datasource.jmx-enabled&#x3D;false # Whether to enable JMX support (if provided by the underlying pool).  
+spring.datasource.jndi-name&#x3D; # JNDI location of the datasource. Class, url, username &amp; password are ignored when set.  
+spring.datasource.name&#x3D; # Name of the datasource. Default to &quot;testdb&quot; when using an embedded database.  
+spring.datasource.password&#x3D; # Login password of the database.  
+spring.datasource.platform&#x3D;all # Platform to use in the DDL or DML scripts (such as schema-$&#123;platform&#125;.sql or data-$&#123;platform&#125;.sql).  
+spring.datasource.schema&#x3D; # Schema (DDL) script resource references.  
+spring.datasource.schema-username&#x3D; # Username of the database to execute DDL scripts (if different).  
+spring.datasource.schema-password&#x3D; # Password of the database to execute DDL scripts (if different).  
+spring.datasource.separator&#x3D;; # Statement separator in SQL initialization scripts.  
+spring.datasource.sql-script-encoding&#x3D; # SQL scripts encoding.  
+spring.datasource.tomcat.*&#x3D; # Tomcat datasource specific settings  
+spring.datasource.type&#x3D; # Fully qualified name of the connection pool implementation to use. By default, it is auto-detected from the classpath.  
+spring.datasource.url&#x3D; # JDBC URL of the database.  
+spring.datasource.username&#x3D; # Login username of the database.  
+spring.datasource.xa.data-source-class-name&#x3D; # XA datasource fully qualified name.  
+spring.datasource.xa.properties&#x3D; # Properties to pass to the XA data source.  
+    
+# JEST (Elasticsearch HTTP client) (JestProperties)  
+spring.elasticsearch.jest.connection-timeout&#x3D;3s # Connection timeout.  
+spring.elasticsearch.jest.multi-threaded&#x3D;true # Whether to enable connection requests from multiple execution threads.  
+spring.elasticsearch.jest.password&#x3D; # Login password.  
+spring.elasticsearch.jest.proxy.host&#x3D; # Proxy host the HTTP client should use.  
+spring.elasticsearch.jest.proxy.port&#x3D; # Proxy port the HTTP client should use.  
+spring.elasticsearch.jest.read-timeout&#x3D;3s # Read timeout.  
+spring.elasticsearch.jest.uris&#x3D;http:&#x2F;&#x2F;localhost:9200 # Comma-separated list of the Elasticsearch instances to use.  
+spring.elasticsearch.jest.username&#x3D; # Login username.  
+    
+# Elasticsearch REST clients (RestClientProperties)  
+spring.elasticsearch.rest.password&#x3D; # Credentials password.  
+ spring.elasticsearch.rest.uris&#x3D;http:&#x2F;&#x2F;localhost:9200 # Comma-separated list of the Elasticsearch instances to use.  
+ spring.elasticsearch.rest.username&#x3D; # Credentials username.  
+    
+# H2 Web Console (H2ConsoleProperties)  
+spring.h2.console.enabled&#x3D;false # Whether to enable the console.  
+spring.h2.console.path&#x3D;&#x2F;h2-console # Path at which the console is available.  
+spring.h2.console.settings.trace&#x3D;false # Whether to enable trace output.  
+spring.h2.console.settings.web-allow-others&#x3D;false # Whether to enable remote access.  
+    
+# InfluxDB (InfluxDbProperties)  
+spring.influx.password&#x3D; # Login password.  
+spring.influx.url&#x3D; # URL of the InfluxDB instance to which to connect.  
+spring.influx.user&#x3D; # Login user.  
+    
+# JOOQ (JooqProperties)  
+spring.jooq.sql-dialect&#x3D; # SQL dialect to use. Auto-detected by default.  
+    
+# JDBC (JdbcProperties)  
+spring.jdbc.template.fetch-size&#x3D;-1 # Number of rows that should be fetched from the database when more rows are needed.  
+spring.jdbc.template.max-rows&#x3D;-1 # Maximum number of rows.  
+spring.jdbc.template.query-timeout&#x3D; # Query timeout. Default is to use the JDBC driver&#39;s default configuration. If a duration suffix is not specified, seconds will be used.  
+    
+# JPA (JpaBaseConfiguration, HibernateJpaAutoConfiguration)  
+spring.data.jpa.repositories.bootstrap-mode&#x3D;default # Bootstrap mode for JPA repositories.  
+spring.data.jpa.repositories.enabled&#x3D;true # Whether to enable JPA repositories.  
+spring.jpa.database&#x3D; # Target database to operate on, auto-detected by default. Can be alternatively set using the &quot;databasePlatform&quot; property.  
+spring.jpa.database-platform&#x3D; # Name of the target database to operate on, auto-detected by default. Can be alternatively set using the &quot;Database&quot; enum.  
+spring.jpa.generate-ddl&#x3D;false # Whether to initialize the schema on startup.  
+spring.jpa.hibernate.ddl-auto&#x3D; # DDL mode. This is actually a shortcut for the &quot;hibernate.hbm2ddl.auto&quot; property. Defaults to &quot;create-drop&quot; when using an embedded database and no schema manager was detected. Otherwise, defaults to &quot;none&quot;.  
+spring.jpa.hibernate.naming.implicit-strategy&#x3D; # Fully qualified name of the implicit naming strategy.  
+spring.jpa.hibernate.naming.physical-strategy&#x3D; # Fully qualified name of the physical naming strategy.  
+spring.jpa.hibernate.use-new-id-generator-mappings&#x3D; # Whether to use Hibernate&#39;s newer IdentifierGenerator for AUTO, TABLE and SEQUENCE.  
+spring.jpa.mapping-resources&#x3D; # Mapping resources (equivalent to &quot;mapping-file&quot; entries in persistence.xml).  
+spring.jpa.open-in-view&#x3D;true # Register OpenEntityManagerInViewInterceptor. Binds a JPA EntityManager to the thread for the entire processing of the request.  
+spring.jpa.properties.*&#x3D; # Additional native properties to set on the JPA provider.  
+spring.jpa.show-sql&#x3D;false # Whether to enable logging of SQL statements.  
+    
+# JTA (JtaAutoConfiguration)  
+spring.jta.enabled&#x3D;true # Whether to enable JTA support.  
+spring.jta.log-dir&#x3D; # Transaction logs directory.  
+spring.jta.transaction-manager-id&#x3D; # Transaction manager unique identifier.  
+    
+# ATOMIKOS (AtomikosProperties)  
+spring.jta.atomikos.connectionfactory.borrow-connection-timeout&#x3D;30 # Timeout, in seconds, for borrowing connections from the pool.  
+spring.jta.atomikos.connectionfactory.ignore-session-transacted-flag&#x3D;true # Whether to ignore the transacted flag when creating session.  
+spring.jta.atomikos.connectionfactory.local-transaction-mode&#x3D;false # Whether local transactions are desired.  
+spring.jta.atomikos.connectionfactory.maintenance-interval&#x3D;60 # The time, in seconds, between runs of the pool&#39;s maintenance thread.  
+spring.jta.atomikos.connectionfactory.max-idle-time&#x3D;60 # The time, in seconds, after which connections are cleaned up from the pool.  
+spring.jta.atomikos.connectionfactory.max-lifetime&#x3D;0 # The time, in seconds, that a connection can be pooled for before being destroyed. 0 denotes no limit.  
+spring.jta.atomikos.connectionfactory.max-pool-size&#x3D;1 # The maximum size of the pool.  
+spring.jta.atomikos.connectionfactory.min-pool-size&#x3D;1 # The minimum size of the pool.  
+spring.jta.atomikos.connectionfactory.reap-timeout&#x3D;0 # The reap timeout, in seconds, for borrowed connections. 0 denotes no limit.  
+spring.jta.atomikos.connectionfactory.unique-resource-name&#x3D;jmsConnectionFactory # The unique name used to identify the resource during recovery.  
+spring.jta.atomikos.connectionfactory.xa-connection-factory-class-name&#x3D; # Vendor-specific implementation of XAConnectionFactory.  
+spring.jta.atomikos.connectionfactory.xa-properties&#x3D; # Vendor-specific XA properties.  
+spring.jta.atomikos.datasource.borrow-connection-timeout&#x3D;30 # Timeout, in seconds, for borrowing connections from the pool.  
+spring.jta.atomikos.datasource.concurrent-connection-validation&#x3D; # Whether to use concurrent connection validation.  
+spring.jta.atomikos.datasource.default-isolation-level&#x3D; # Default isolation level of connections provided by the pool.  
+spring.jta.atomikos.datasource.login-timeout&#x3D; # Timeout, in seconds, for establishing a database connection.  
+spring.jta.atomikos.datasource.maintenance-interval&#x3D;60 # The time, in seconds, between runs of the pool&#39;s maintenance thread.  
+spring.jta.atomikos.datasource.max-idle-time&#x3D;60 # The time, in seconds, after which connections are cleaned up from the pool.  
+spring.jta.atomikos.datasource.max-lifetime&#x3D;0 # The time, in seconds, that a connection can be pooled for before being destroyed. 0 denotes no limit.  
+spring.jta.atomikos.datasource.max-pool-size&#x3D;1 # The maximum size of the pool.  
+spring.jta.atomikos.datasource.min-pool-size&#x3D;1 # The minimum size of the pool.  
+spring.jta.atomikos.datasource.reap-timeout&#x3D;0 # The reap timeout, in seconds, for borrowed connections. 0 denotes no limit.  
+spring.jta.atomikos.datasource.test-query&#x3D; # SQL query or statement used to validate a connection before returning it.  
+spring.jta.atomikos.datasource.unique-resource-name&#x3D;dataSource # The unique name used to identify the resource during recovery.  
+spring.jta.atomikos.datasource.xa-data-source-class-name&#x3D; # Vendor-specific implementation of XAConnectionFactory.  
+spring.jta.atomikos.datasource.xa-properties&#x3D; # Vendor-specific XA properties.  
+spring.jta.atomikos.properties.allow-sub-transactions&#x3D;true # Specify whether sub-transactions are allowed.  
+spring.jta.atomikos.properties.checkpoint-interval&#x3D;500 # Interval between checkpoints, expressed as the number of log writes between two checkpoints.  
+spring.jta.atomikos.properties.default-jta-timeout&#x3D;10000ms # Default timeout for JTA transactions.  
+spring.jta.atomikos.properties.default-max-wait-time-on-shutdown&#x3D;9223372036854775807 # How long should normal shutdown (no-force) wait for transactions to complete.  
+spring.jta.atomikos.properties.enable-logging&#x3D;true # Whether to enable disk logging.  
+spring.jta.atomikos.properties.force-shutdown-on-vm-exit&#x3D;false # Whether a VM shutdown should trigger forced shutdown of the transaction core.  
+spring.jta.atomikos.properties.log-base-dir&#x3D; # Directory in which the log files should be stored.  
+spring.jta.atomikos.properties.log-base-name&#x3D;tmlog # Transactions log file base name.  
+spring.jta.atomikos.properties.max-actives&#x3D;50 # Maximum number of active transactions.  
+spring.jta.atomikos.properties.max-timeout&#x3D;300000ms # Maximum timeout that can be allowed for transactions.  
+spring.jta.atomikos.properties.recovery.delay&#x3D;10000ms # Delay between two recovery scans.  
+spring.jta.atomikos.properties.recovery.forget-orphaned-log-entries-delay&#x3D;86400000ms # Delay after which recovery can cleanup pending (&#39;orphaned&#39;) log entries.  
+spring.jta.atomikos.properties.recovery.max-retries&#x3D;5 # Number of retry attempts to commit the transaction before throwing an exception.  
+spring.jta.atomikos.properties.recovery.retry-interval&#x3D;10000ms # Delay between retry attempts.  
+spring.jta.atomikos.properties.serial-jta-transactions&#x3D;true # Whether sub-transactions should be joined when possible.  
+spring.jta.atomikos.properties.service&#x3D; # Transaction manager implementation that should be started.  
+spring.jta.atomikos.properties.threaded-two-phase-commit&#x3D;false # Whether to use different (and concurrent) threads for two-phase commit on the participating resources.  
+spring.jta.atomikos.properties.transaction-manager-unique-name&#x3D; # The transaction manager&#39;s unique name.  
+    
+# BITRONIX  
+spring.jta.bitronix.connectionfactory.acquire-increment&#x3D;1 # Number of connections to create when growing the pool.  
+spring.jta.bitronix.connectionfactory.acquisition-interval&#x3D;1 # Time, in seconds, to wait before trying to acquire a connection again after an invalid connection was acquired.  
+spring.jta.bitronix.connectionfactory.acquisition-timeout&#x3D;30 # Timeout, in seconds, for acquiring connections from the pool.  
+spring.jta.bitronix.connectionfactory.allow-local-transactions&#x3D;true # Whether the transaction manager should allow mixing XA and non-XA transactions.  
+spring.jta.bitronix.connectionfactory.apply-transaction-timeout&#x3D;false # Whether the transaction timeout should be set on the XAResource when it is enlisted.  
+spring.jta.bitronix.connectionfactory.automatic-enlisting-enabled&#x3D;true # Whether resources should be enlisted and delisted automatically.  
+spring.jta.bitronix.connectionfactory.cache-producers-consumers&#x3D;true # Whether producers and consumers should be cached.  
+spring.jta.bitronix.connectionfactory.class-name&#x3D; # Underlying implementation class name of the XA resource.  
+spring.jta.bitronix.connectionfactory.defer-connection-release&#x3D;true # Whether the provider can run many transactions on the same connection and supports transaction interleaving.  
+spring.jta.bitronix.connectionfactory.disabled&#x3D; # Whether this resource is disabled, meaning it&#39;s temporarily forbidden to acquire a connection from its pool.  
+spring.jta.bitronix.connectionfactory.driver-properties&#x3D; # Properties that should be set on the underlying implementation.  
+spring.jta.bitronix.connectionfactory.failed&#x3D; # Mark this resource producer as failed.  
+spring.jta.bitronix.connectionfactory.ignore-recovery-failures&#x3D;false # Whether recovery failures should be ignored.  
+spring.jta.bitronix.connectionfactory.max-idle-time&#x3D;60 # The time, in seconds, after which connections are cleaned up from the pool.  
+spring.jta.bitronix.connectionfactory.max-pool-size&#x3D;10 # The maximum size of the pool. 0 denotes no limit.  
+spring.jta.bitronix.connectionfactory.min-pool-size&#x3D;0 # The minimum size of the pool.  
+spring.jta.bitronix.connectionfactory.password&#x3D; # The password to use to connect to the JMS provider.  
+spring.jta.bitronix.connectionfactory.share-transaction-connections&#x3D;false #  Whether connections in the ACCESSIBLE state can be shared within the context of a transaction.  
+spring.jta.bitronix.connectionfactory.test-connections&#x3D;true # Whether connections should be tested when acquired from the pool.  
+spring.jta.bitronix.connectionfactory.two-pc-ordering-position&#x3D;1 # The position that this resource should take during two-phase commit (always first is Integer.MIN_VALUE, always last is Integer.MAX_VALUE).  
+spring.jta.bitronix.connectionfactory.unique-name&#x3D;jmsConnectionFactory # The unique name used to identify the resource during recovery.  
+spring.jta.bitronix.connectionfactory.use-tm-join&#x3D;true # Whether TMJOIN should be used when starting XAResources.  
+spring.jta.bitronix.connectionfactory.user&#x3D; # The user to use to connect to the JMS provider.  
+spring.jta.bitronix.datasource.acquire-increment&#x3D;1 # Number of connections to create when growing the pool.  
+spring.jta.bitronix.datasource.acquisition-interval&#x3D;1 # Time, in seconds, to wait before trying to acquire a connection again after an invalid connection was acquired.  
+spring.jta.bitronix.datasource.acquisition-timeout&#x3D;30 # Timeout, in seconds, for acquiring connections from the pool.  
+spring.jta.bitronix.datasource.allow-local-transactions&#x3D;true # Whether the transaction manager should allow mixing XA and non-XA transactions.  
+spring.jta.bitronix.datasource.apply-transaction-timeout&#x3D;false # Whether the transaction timeout should be set on the XAResource when it is enlisted.  
+spring.jta.bitronix.datasource.automatic-enlisting-enabled&#x3D;true # Whether resources should be enlisted and delisted automatically.  
+spring.jta.bitronix.datasource.class-name&#x3D; # Underlying implementation class name of the XA resource.  
+spring.jta.bitronix.datasource.cursor-holdability&#x3D; # The default cursor holdability for connections.  
+spring.jta.bitronix.datasource.defer-connection-release&#x3D;true # Whether the database can run many transactions on the same connection and supports transaction interleaving.  
+spring.jta.bitronix.datasource.disabled&#x3D; # Whether this resource is disabled, meaning it&#39;s temporarily forbidden to acquire a connection from its pool.  
+spring.jta.bitronix.datasource.driver-properties&#x3D; # Properties that should be set on the underlying implementation.  
+spring.jta.bitronix.datasource.enable-jdbc4-connection-test&#x3D; # Whether Connection.isValid() is called when acquiring a connection from the pool.  
+spring.jta.bitronix.datasource.failed&#x3D; # Mark this resource producer as failed.  
+spring.jta.bitronix.datasource.ignore-recovery-failures&#x3D;false # Whether recovery failures should be ignored.  
+spring.jta.bitronix.datasource.isolation-level&#x3D; # The default isolation level for connections.  
+spring.jta.bitronix.datasource.local-auto-commit&#x3D; # The default auto-commit mode for local transactions.  
+spring.jta.bitronix.datasource.login-timeout&#x3D; # Timeout, in seconds, for establishing a database connection.  
+spring.jta.bitronix.datasource.max-idle-time&#x3D;60 # The time, in seconds, after which connections are cleaned up from the pool.  
+spring.jta.bitronix.datasource.max-pool-size&#x3D;10 # The maximum size of the pool. 0 denotes no limit.  
+spring.jta.bitronix.datasource.min-pool-size&#x3D;0 # The minimum size of the pool.  
+spring.jta.bitronix.datasource.prepared-statement-cache-size&#x3D;0 # The target size of the prepared statement cache. 0 disables the cache.  
+spring.jta.bitronix.datasource.share-transaction-connections&#x3D;false #  Whether connections in the ACCESSIBLE state can be shared within the context of a transaction.  
+spring.jta.bitronix.datasource.test-query&#x3D; # SQL query or statement used to validate a connection before returning it.  
+spring.jta.bitronix.datasource.two-pc-ordering-position&#x3D;1 # The position that this resource should take during two-phase commit (always first is Integer.MIN_VALUE, and always last is Integer.MAX_VALUE).  
+spring.jta.bitronix.datasource.unique-name&#x3D;dataSource # The unique name used to identify the resource during recovery.  
+spring.jta.bitronix.datasource.use-tm-join&#x3D;true # Whether TMJOIN should be used when starting XAResources.  
+spring.jta.bitronix.properties.allow-multiple-lrc&#x3D;false # Whether to allow multiple LRC resources to be enlisted into the same transaction.  
+spring.jta.bitronix.properties.asynchronous2-pc&#x3D;false # Whether to enable asynchronously execution of two phase commit.  
+spring.jta.bitronix.properties.background-recovery-interval-seconds&#x3D;60 # Interval in seconds at which to run the recovery process in the background.  
+spring.jta.bitronix.properties.current-node-only-recovery&#x3D;true # Whether to recover only the current node.  
+spring.jta.bitronix.properties.debug-zero-resource-transaction&#x3D;false # Whether to log the creation and commit call stacks of transactions executed without a single enlisted resource.  
+spring.jta.bitronix.properties.default-transaction-timeout&#x3D;60 # Default transaction timeout, in seconds.  
+spring.jta.bitronix.properties.disable-jmx&#x3D;false # Whether to enable JMX support.  
+spring.jta.bitronix.properties.exception-analyzer&#x3D; # Set the fully qualified name of the exception analyzer implementation to use.  
+spring.jta.bitronix.properties.filter-log-status&#x3D;false # Whether to enable filtering of logs so that only mandatory logs are written.  
+spring.jta.bitronix.properties.force-batching-enabled&#x3D;true #  Whether disk forces are batched.  
+spring.jta.bitronix.properties.forced-write-enabled&#x3D;true # Whether logs are forced to disk.  
+spring.jta.bitronix.properties.graceful-shutdown-interval&#x3D;60 # Maximum amount of seconds the TM waits for transactions to get done before aborting them at shutdown time.  
+spring.jta.bitronix.properties.jndi-transaction-synchronization-registry-name&#x3D; # JNDI name of the TransactionSynchronizationRegistry.  
+spring.jta.bitronix.properties.jndi-user-transaction-name&#x3D; # JNDI name of the UserTransaction.  
+spring.jta.bitronix.properties.journal&#x3D;disk # Name of the journal. Can be &#39;disk&#39;, &#39;null&#39;, or a class name.  
+spring.jta.bitronix.properties.log-part1-filename&#x3D;btm1.tlog # Name of the first fragment of the journal.  
+spring.jta.bitronix.properties.log-part2-filename&#x3D;btm2.tlog # Name of the second fragment of the journal.  
+spring.jta.bitronix.properties.max-log-size-in-mb&#x3D;2 # Maximum size in megabytes of the journal fragments.  
+spring.jta.bitronix.properties.resource-configuration-filename&#x3D; # ResourceLoader configuration file name.  
+spring.jta.bitronix.properties.server-id&#x3D; # ASCII ID that must uniquely identify this TM instance. Defaults to the machine&#39;s IP address.  
+spring.jta.bitronix.properties.skip-corrupted-logs&#x3D;false # Skip corrupted transactions log entries.  
+spring.jta.bitronix.properties.warn-about-zero-resource-transaction&#x3D;true # Whether to log a warning for transactions executed without a single enlisted resource.  
+    
+# EMBEDDED MONGODB (EmbeddedMongoProperties)  
+spring.mongodb.embedded.features&#x3D;sync_delay # Comma-separated list of features to enable.  
+spring.mongodb.embedded.storage.database-dir&#x3D; # Directory used for data storage.  
+spring.mongodb.embedded.storage.oplog-size&#x3D; # Maximum size of the oplog.  
+spring.mongodb.embedded.storage.repl-set-name&#x3D; # Name of the replica set.  
+spring.mongodb.embedded.version&#x3D;3.5.5 # Version of Mongo to use.  
+    
+# REDIS (RedisProperties)  
+spring.redis.cluster.max-redirects&#x3D; # Maximum number of redirects to follow when executing commands across the cluster.  
+spring.redis.cluster.nodes&#x3D; # Comma-separated list of &quot;host:port&quot; pairs to bootstrap from.  
+spring.redis.database&#x3D;0 # Database index used by the connection factory.  
+spring.redis.url&#x3D; # Connection URL. Overrides host, port, and password. User is ignored. Example: redis:&#x2F;&#x2F;user:password@example.com:6379  
+spring.redis.host&#x3D;localhost # Redis server host.  
+spring.redis.jedis.pool.max-active&#x3D;8 # Maximum number of connections that can be allocated by the pool at a given time. Use a negative value for no limit.  
+spring.redis.jedis.pool.max-idle&#x3D;8 # Maximum number of &quot;idle&quot; connections in the pool. Use a negative value to indicate an unlimited number of idle connections.  
+spring.redis.jedis.pool.max-wait&#x3D;-1ms # Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely.  
+spring.redis.jedis.pool.min-idle&#x3D;0 # Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if it is positive.  
+spring.redis.lettuce.pool.max-active&#x3D;8 # Maximum number of connections that can be allocated by the pool at a given time. Use a negative value for no limit.  
+spring.redis.lettuce.pool.max-idle&#x3D;8 # Maximum number of &quot;idle&quot; connections in the pool. Use a negative value to indicate an unlimited number of idle connections.  
+spring.redis.lettuce.pool.max-wait&#x3D;-1ms # Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely.  
+spring.redis.lettuce.pool.min-idle&#x3D;0 # Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if it is positive.  
+spring.redis.lettuce.shutdown-timeout&#x3D;100ms # Shutdown timeout.  
+spring.redis.password&#x3D; # Login password of the redis server.  
+spring.redis.port&#x3D;6379 # Redis server port.  
+spring.redis.sentinel.master&#x3D; # Name of the Redis server.  
+spring.redis.sentinel.nodes&#x3D; # Comma-separated list of &quot;host:port&quot; pairs.  
+spring.redis.ssl&#x3D;false # Whether to enable SSL support.  
+spring.redis.timeout&#x3D; # Connection timeout.  
+    
+# TRANSACTION (TransactionProperties)  
+spring.transaction.default-timeout&#x3D; # Default transaction timeout. If a duration suffix is not specified, seconds will be used.  
+spring.transaction.rollback-on-commit-failure&#x3D; # Whether to roll back on commit failures.
+
+
+ 
+ 
+# ----------------------------------------
+# INTEGRATION PROPERTIES
+# ----------------------------------------
+ 
+# ACTIVEMQ (ActiveMQProperties)
+spring.activemq.broker-url&#x3D; # URL of the ActiveMQ broker. Auto-generated by default.
+spring.activemq.close-timeout&#x3D;15s # Time to wait before considering a close complete.
+spring.activemq.in-memory&#x3D;true # Whether the default broker URL should be in memory. Ignored if an explicit broker has been specified.
+spring.activemq.non-blocking-redelivery&#x3D;false # Whether to stop message delivery before re-delivering messages from a rolled back transaction. This implies that message order is not preserved when this is enabled.
+spring.activemq.password&#x3D; # Login password of the broker.
+spring.activemq.send-timeout&#x3D;0ms # Time to wait on message sends for a response. Set it to 0 to wait forever.
+spring.activemq.user&#x3D; # Login user of the broker.
+spring.activemq.packages.trust-all&#x3D; # Whether to trust all packages.
+spring.activemq.packages.trusted&#x3D; # Comma-separated list of specific packages to trust (when not trusting all packages).
+spring.activemq.pool.block-if-full&#x3D;true # Whether to block when a connection is requested and the pool is full. Set it to false to throw a &quot;JMSException&quot; instead.
+spring.activemq.pool.block-if-full-timeout&#x3D;-1ms # Blocking period before throwing an exception if the pool is still full.
+spring.activemq.pool.enabled&#x3D;false # Whether a JmsPoolConnectionFactory should be created, instead of a regular ConnectionFactory.
+spring.activemq.pool.idle-timeout&#x3D;30s # Connection idle timeout.
+spring.activemq.pool.max-connections&#x3D;1 # Maximum number of pooled connections.
+spring.activemq.pool.max-sessions-per-connection&#x3D;500 # Maximum number of pooled sessions per connection in the pool.
+spring.activemq.pool.time-between-expiration-check&#x3D;-1ms # Time to sleep between runs of the idle connection eviction thread. When negative, no idle connection eviction thread runs.
+spring.activemq.pool.use-anonymous-producers&#x3D;true # Whether to use only one anonymous &quot;MessageProducer&quot; instance. Set it to false to create one &quot;MessageProducer&quot; every time one is required.
+ 
+# ARTEMIS (ArtemisProperties)
+spring.artemis.embedded.cluster-password&#x3D; # Cluster password. Randomly generated on startup by default.
+spring.artemis.embedded.data-directory&#x3D; # Journal file directory. Not necessary if persistence is turned off.
+spring.artemis.embedded.enabled&#x3D;true # Whether to enable embedded mode if the Artemis server APIs are available.
+spring.artemis.embedded.persistent&#x3D;false # Whether to enable persistent store.
+spring.artemis.embedded.queues&#x3D; # Comma-separated list of queues to create on startup.
+spring.artemis.embedded.server-id&#x3D; # Server ID. By default, an auto-incremented counter is used.
+spring.artemis.embedded.topics&#x3D; # Comma-separated list of topics to create on startup.
+spring.artemis.host&#x3D;localhost # Artemis broker host.
+spring.artemis.mode&#x3D; # Artemis deployment mode, auto-detected by default.
+spring.artemis.password&#x3D; # Login password of the broker.
+spring.artemis.pool.block-if-full&#x3D;true # Whether to block when a connection is requested and the pool is full. Set it to false to throw a &quot;JMSException&quot; instead.
+spring.artemis.pool.block-if-full-timeout&#x3D;-1ms # Blocking period before throwing an exception if the pool is still full.
+spring.artemis.pool.enabled&#x3D;false # Whether a JmsPoolConnectionFactory should be created, instead of a regular ConnectionFactory.
+spring.artemis.pool.idle-timeout&#x3D;30s # Connection idle timeout.
+spring.artemis.pool.max-connections&#x3D;1 # Maximum number of pooled connections.
+spring.artemis.pool.max-sessions-per-connection&#x3D;500 # Maximum number of pooled sessions per connection in the pool.
+spring.artemis.pool.time-between-expiration-check&#x3D;-1ms # Time to sleep between runs of the idle connection eviction thread. When negative, no idle connection eviction thread runs.
+spring.artemis.pool.use-anonymous-producers&#x3D;true # Whether to use only one anonymous &quot;MessageProducer&quot; instance. Set it to false to create one &quot;MessageProducer&quot; every time one is required.
+spring.artemis.port&#x3D;61616 # Artemis broker port.
+spring.artemis.user&#x3D; # Login user of the broker.
+ 
+# SPRING BATCH (BatchProperties)
+spring.batch.initialize-schema&#x3D;embedded # Database schema initialization mode.
+spring.batch.job.enabled&#x3D;true # Execute all Spring Batch jobs in the context on startup.
+spring.batch.job.names&#x3D; # Comma-separated list of job names to execute on startup (for instance, &#96;job1,job2&#96;). By default, all Jobs found in the context are executed.
+spring.batch.schema&#x3D;classpath:org&#x2F;springframework&#x2F;batch&#x2F;core&#x2F;schema-@@platform@@.sql # Path to the SQL file to use to initialize the database schema.
+spring.batch.table-prefix&#x3D; # Table prefix for all the batch meta-data tables.
+ 
+# SPRING INTEGRATION (IntegrationProperties)
+spring.integration.jdbc.initialize-schema&#x3D;embedded # Database schema initialization mode.
+spring.integration.jdbc.schema&#x3D;classpath:org&#x2F;springframework&#x2F;integration&#x2F;jdbc&#x2F;schema-@@platform@@.sql # Path to the SQL file to use to initialize the database schema.
+ 
+# JMS (JmsProperties)
+spring.jms.cache.consumers&#x3D;false # Whether to cache message consumers.
+spring.jms.cache.enabled&#x3D;true # Whether to cache sessions.
+spring.jms.cache.producers&#x3D;true # Whether to cache message producers.
+spring.jms.cache.session-cache-size&#x3D;1 # Size of the session cache (per JMS Session type).
+spring.jms.jndi-name&#x3D; # Connection factory JNDI name. When set, takes precedence to others connection factory auto-configurations.
+spring.jms.listener.acknowledge-mode&#x3D; # Acknowledge mode of the container. By default, the listener is transacted with automatic acknowledgment.
+spring.jms.listener.auto-startup&#x3D;true # Start the container automatically on startup.
+spring.jms.listener.concurrency&#x3D; # Minimum number of concurrent consumers.
+spring.jms.listener.max-concurrency&#x3D; # Maximum number of concurrent consumers.
+spring.jms.pub-sub-domain&#x3D;false # Whether the default destination type is topic.
+spring.jms.template.default-destination&#x3D; # Default destination to use on send and receive operations that do not have a destination parameter.
+spring.jms.template.delivery-delay&#x3D; # Delivery delay to use for send calls.
+spring.jms.template.delivery-mode&#x3D; # Delivery mode. Enables QoS (Quality of Service) when set.
+spring.jms.template.priority&#x3D; # Priority of a message when sending. Enables QoS (Quality of Service) when set.
+spring.jms.template.qos-enabled&#x3D; # Whether to enable explicit QoS (Quality of Service) when sending a message.
+spring.jms.template.receive-timeout&#x3D; # Timeout to use for receive calls.
+spring.jms.template.time-to-live&#x3D; # Time-to-live of a message when sending. Enables QoS (Quality of Service) when set.
+ 
+# APACHE KAFKA (KafkaProperties)
+spring.kafka.admin.client-id&#x3D; # ID to pass to the server when making requests. Used for server-side logging.
+spring.kafka.admin.fail-fast&#x3D;false # Whether to fail fast if the broker is not available on startup.
+spring.kafka.admin.properties.*&#x3D; # Additional admin-specific properties used to configure the client.
+spring.kafka.admin.ssl.key-password&#x3D; # Password of the private key in the key store file.
+spring.kafka.admin.ssl.key-store-location&#x3D; # Location of the key store file.
+spring.kafka.admin.ssl.key-store-password&#x3D; # Store password for the key store file.
+spring.kafka.admin.ssl.key-store-type&#x3D; # Type of the key store.
+spring.kafka.admin.ssl.protocol&#x3D; # SSL protocol to use.
+spring.kafka.admin.ssl.trust-store-location&#x3D; # Location of the trust store file.
+spring.kafka.admin.ssl.trust-store-password&#x3D; # Store password for the trust store file.
+spring.kafka.admin.ssl.trust-store-type&#x3D; # Type of the trust store.
+spring.kafka.bootstrap-servers&#x3D; # Comma-delimited list of host:port pairs to use for establishing the initial connections to the Kafka cluster. Applies to all components unless overridden.
+spring.kafka.client-id&#x3D; # ID to pass to the server when making requests. Used for server-side logging.
+spring.kafka.consumer.auto-commit-interval&#x3D; # Frequency with which the consumer offsets are auto-committed to Kafka if &#39;enable.auto.commit&#39; is set to true.
+spring.kafka.consumer.auto-offset-reset&#x3D; # What to do when there is no initial offset in Kafka or if the current offset no longer exists on the server.
+spring.kafka.consumer.bootstrap-servers&#x3D; # Comma-delimited list of host:port pairs to use for establishing the initial connections to the Kafka cluster. Overrides the global property, for consumers.
+spring.kafka.consumer.client-id&#x3D; # ID to pass to the server when making requests. Used for server-side logging.
+spring.kafka.consumer.enable-auto-commit&#x3D; # Whether the consumer&#39;s offset is periodically committed in the background.
+spring.kafka.consumer.fetch-max-wait&#x3D; # Maximum amount of time the server blocks before answering the fetch request if there isn&#39;t sufficient data to immediately satisfy the requirement given by &quot;fetch-min-size&quot;.
+spring.kafka.consumer.fetch-min-size&#x3D; # Minimum amount of data the server should return for a fetch request.
+spring.kafka.consumer.group-id&#x3D; # Unique string that identifies the consumer group to which this consumer belongs.
+spring.kafka.consumer.heartbeat-interval&#x3D; # Expected time between heartbeats to the consumer coordinator.
+spring.kafka.consumer.key-deserializer&#x3D; # Deserializer class for keys.
+spring.kafka.consumer.max-poll-records&#x3D; # Maximum number of records returned in a single call to poll().
+spring.kafka.consumer.properties.*&#x3D; # Additional consumer-specific properties used to configure the client.
+spring.kafka.consumer.ssl.key-password&#x3D; # Password of the private key in the key store file.
+spring.kafka.consumer.ssl.key-store-location&#x3D; # Location of the key store file.
+spring.kafka.consumer.ssl.key-store-password&#x3D; # Store password for the key store file.
+spring.kafka.consumer.ssl.key-store-type&#x3D; # Type of the key store.
+spring.kafka.consumer.ssl.protocol&#x3D; # SSL protocol to use.
+spring.kafka.consumer.ssl.trust-store-location&#x3D; # Location of the trust store file.
+spring.kafka.consumer.ssl.trust-store-password&#x3D; # Store password for the trust store file.
+spring.kafka.consumer.ssl.trust-store-type&#x3D; # Type of the trust store.
+spring.kafka.consumer.value-deserializer&#x3D; # Deserializer class for values.
+spring.kafka.jaas.control-flag&#x3D;required # Control flag for login configuration.
+spring.kafka.jaas.enabled&#x3D;false # Whether to enable JAAS configuration.
+spring.kafka.jaas.login-module&#x3D;com.sun.security.auth.module.Krb5LoginModule # Login module.
+spring.kafka.jaas.options&#x3D; # Additional JAAS options.
+spring.kafka.listener.ack-count&#x3D; # Number of records between offset commits when ackMode is &quot;COUNT&quot; or &quot;COUNT_TIME&quot;.
+spring.kafka.listener.ack-mode&#x3D; # Listener AckMode. See the spring-kafka documentation.
+spring.kafka.listener.ack-time&#x3D; # Time between offset commits when ackMode is &quot;TIME&quot; or &quot;COUNT_TIME&quot;.
+spring.kafka.listener.client-id&#x3D; # Prefix for the listener&#39;s consumer client.id property.
+spring.kafka.listener.concurrency&#x3D; # Number of threads to run in the listener containers.
+spring.kafka.listener.idle-event-interval&#x3D; # Time between publishing idle consumer events (no data received).
+spring.kafka.listener.log-container-config&#x3D; # Whether to log the container configuration during initialization (INFO level).
+spring.kafka.listener.monitor-interval&#x3D; # Time between checks for non-responsive consumers. If a duration suffix is not specified, seconds will be used.
+spring.kafka.listener.no-poll-threshold&#x3D; # Multiplier applied to &quot;pollTimeout&quot; to determine if a consumer is non-responsive.
+spring.kafka.listener.poll-timeout&#x3D; # Timeout to use when polling the consumer.
+spring.kafka.listener.type&#x3D;single # Listener type.
+spring.kafka.producer.acks&#x3D; # Number of acknowledgments the producer requires the leader to have received before considering a request complete.
+spring.kafka.producer.batch-size&#x3D; # Default batch size.
+spring.kafka.producer.bootstrap-servers&#x3D; # Comma-delimited list of host:port pairs to use for establishing the initial connections to the Kafka cluster. Overrides the global property, for producers.
+spring.kafka.producer.buffer-memory&#x3D; # Total memory size the producer can use to buffer records waiting to be sent to the server.
+spring.kafka.producer.client-id&#x3D; # ID to pass to the server when making requests. Used for server-side logging.
+spring.kafka.producer.compression-type&#x3D; # Compression type for all data generated by the producer.
+spring.kafka.producer.key-serializer&#x3D; # Serializer class for keys.
+spring.kafka.producer.properties.*&#x3D; # Additional producer-specific properties used to configure the client.
+spring.kafka.producer.retries&#x3D; # When greater than zero, enables retrying of failed sends.
+spring.kafka.producer.ssl.key-password&#x3D; # Password of the private key in the key store file.
+spring.kafka.producer.ssl.key-store-location&#x3D; # Location of the key store file.
+spring.kafka.producer.ssl.key-store-password&#x3D; # Store password for the key store file.
+spring.kafka.producer.ssl.key-store-type&#x3D; # Type of the key store.
+spring.kafka.producer.ssl.protocol&#x3D; # SSL protocol to use.
+spring.kafka.producer.ssl.trust-store-location&#x3D; # Location of the trust store file.
+spring.kafka.producer.ssl.trust-store-password&#x3D; # Store password for the trust store file.
+spring.kafka.producer.ssl.trust-store-type&#x3D; # Type of the trust store.
+spring.kafka.producer.transaction-id-prefix&#x3D; # When non empty, enables transaction support for producer.
+spring.kafka.producer.value-serializer&#x3D; # Serializer class for values.
+spring.kafka.properties.*&#x3D; # Additional properties, common to producers and consumers, used to configure the client.
+spring.kafka.ssl.key-password&#x3D; # Password of the private key in the key store file.
+spring.kafka.ssl.key-store-location&#x3D; # Location of the key store file.
+spring.kafka.ssl.key-store-password&#x3D; # Store password for the key store file.
+spring.kafka.ssl.key-store-type&#x3D; # Type of the key store.
+spring.kafka.ssl.protocol&#x3D; # SSL protocol to use.
+spring.kafka.ssl.trust-store-location&#x3D; # Location of the trust store file.
+spring.kafka.ssl.trust-store-password&#x3D; # Store password for the trust store file.
+spring.kafka.ssl.trust-store-type&#x3D; # Type of the trust store.
+spring.kafka.streams.application-id&#x3D; # Kafka streams application.id property; default spring.application.name.
+spring.kafka.streams.auto-startup&#x3D;true # Whether or not to auto-start the streams factory bean.
+spring.kafka.streams.bootstrap-servers&#x3D; # Comma-delimited list of host:port pairs to use for establishing the initial connections to the Kafka cluster. Overrides the global property, for streams.
+spring.kafka.streams.cache-max-size-buffering&#x3D; # Maximum memory size to be used for buffering across all threads.
+spring.kafka.streams.client-id&#x3D; # ID to pass to the server when making requests. Used for server-side logging.
+spring.kafka.streams.properties.*&#x3D; # Additional Kafka properties used to configure the streams.
+spring.kafka.streams.replication-factor&#x3D; # The replication factor for change log topics and repartition topics created by the stream processing application.
+spring.kafka.streams.ssl.key-password&#x3D; # Password of the private key in the key store file.
+spring.kafka.streams.ssl.key-store-location&#x3D; # Location of the key store file.
+spring.kafka.streams.ssl.key-store-password&#x3D; # Store password for the key store file.
+spring.kafka.streams.ssl.key-store-type&#x3D; # Type of the key store.
+spring.kafka.streams.ssl.protocol&#x3D; # SSL protocol to use.
+spring.kafka.streams.ssl.trust-store-location&#x3D; # Location of the trust store file.
+spring.kafka.streams.ssl.trust-store-password&#x3D; # Store password for the trust store file.
+spring.kafka.streams.ssl.trust-store-type&#x3D; # Type of the trust store.
+spring.kafka.streams.state-dir&#x3D; # Directory location for the state store.
+spring.kafka.template.default-topic&#x3D; # Default topic to which messages are sent.
+ 
+# RABBIT (RabbitProperties)
+spring.rabbitmq.addresses&#x3D; # Comma-separated list of addresses to which the client should connect.
+spring.rabbitmq.cache.channel.checkout-timeout&#x3D; # Duration to wait to obtain a channel if the cache size has been reached.
+spring.rabbitmq.cache.channel.size&#x3D; # Number of channels to retain in the cache.
+spring.rabbitmq.cache.connection.mode&#x3D;channel # Connection factory cache mode.
+spring.rabbitmq.cache.connection.size&#x3D; # Number of connections to cache.
+spring.rabbitmq.connection-timeout&#x3D; # Connection timeout. Set it to zero to wait forever.
+spring.rabbitmq.dynamic&#x3D;true # Whether to create an AmqpAdmin bean.
+spring.rabbitmq.host&#x3D;localhost # RabbitMQ host.
+spring.rabbitmq.listener.direct.acknowledge-mode&#x3D; # Acknowledge mode of container.
+spring.rabbitmq.listener.direct.auto-startup&#x3D;true # Whether to start the container automatically on startup.
+spring.rabbitmq.listener.direct.consumers-per-queue&#x3D; # Number of consumers per queue.
+spring.rabbitmq.listener.direct.default-requeue-rejected&#x3D; # Whether rejected deliveries are re-queued by default.
+spring.rabbitmq.listener.direct.idle-event-interval&#x3D; # How often idle container events should be published.
+spring.rabbitmq.listener.direct.missing-queues-fatal&#x3D;false # Whether to fail if the queues declared by the container are not available on the broker.
+spring.rabbitmq.listener.direct.prefetch&#x3D; # Maximum number of unacknowledged messages that can be outstanding at each consumer.
+spring.rabbitmq.listener.direct.retry.enabled&#x3D;false # Whether publishing retries are enabled.
+spring.rabbitmq.listener.direct.retry.initial-interval&#x3D;1000ms # Duration between the first and second attempt to deliver a message.
+spring.rabbitmq.listener.direct.retry.max-attempts&#x3D;3 # Maximum number of attempts to deliver a message.
+spring.rabbitmq.listener.direct.retry.max-interval&#x3D;10000ms # Maximum duration between attempts.
+spring.rabbitmq.listener.direct.retry.multiplier&#x3D;1 # Multiplier to apply to the previous retry interval.
+spring.rabbitmq.listener.direct.retry.stateless&#x3D;true # Whether retries are stateless or stateful.
+spring.rabbitmq.listener.simple.acknowledge-mode&#x3D; # Acknowledge mode of container.
+spring.rabbitmq.listener.simple.auto-startup&#x3D;true # Whether to start the container automatically on startup.
+spring.rabbitmq.listener.simple.concurrency&#x3D; # Minimum number of listener invoker threads.
+spring.rabbitmq.listener.simple.default-requeue-rejected&#x3D; # Whether rejected deliveries are re-queued by default.
+spring.rabbitmq.listener.simple.idle-event-interval&#x3D; # How often idle container events should be published.
+spring.rabbitmq.listener.simple.max-concurrency&#x3D; # Maximum number of listener invoker threads.
+spring.rabbitmq.listener.simple.missing-queues-fatal&#x3D;true # Whether to fail if the queues declared by the container are not available on the broker and&#x2F;or whether to stop the container if one or more queues are deleted at runtime.
+spring.rabbitmq.listener.simple.prefetch&#x3D; # Maximum number of unacknowledged messages that can be outstanding at each consumer.
+spring.rabbitmq.listener.simple.retry.enabled&#x3D;false # Whether publishing retries are enabled.
+spring.rabbitmq.listener.simple.retry.initial-interval&#x3D;1000ms # Duration between the first and second attempt to deliver a message.
+spring.rabbitmq.listener.simple.retry.max-attempts&#x3D;3 # Maximum number of attempts to deliver a message.
+spring.rabbitmq.listener.simple.retry.max-interval&#x3D;10000ms # Maximum duration between attempts.
+spring.rabbitmq.listener.simple.retry.multiplier&#x3D;1 # Multiplier to apply to the previous retry interval.
+spring.rabbitmq.listener.simple.retry.stateless&#x3D;true # Whether retries are stateless or stateful.
+spring.rabbitmq.listener.simple.transaction-size&#x3D; # Number of messages to be processed between acks when the acknowledge mode is AUTO. If larger than prefetch, prefetch will be increased to this value.
+spring.rabbitmq.listener.type&#x3D;simple # Listener container type.
+spring.rabbitmq.password&#x3D;guest # Login to authenticate against the broker.
+spring.rabbitmq.port&#x3D;5672 # RabbitMQ port.
+spring.rabbitmq.publisher-confirms&#x3D;false # Whether to enable publisher confirms.
+spring.rabbitmq.publisher-returns&#x3D;false # Whether to enable publisher returns.
+spring.rabbitmq.requested-heartbeat&#x3D; # Requested heartbeat timeout; zero for none. If a duration suffix is not specified, seconds will be used.
+spring.rabbitmq.ssl.algorithm&#x3D; # SSL algorithm to use. By default, configured by the Rabbit client library.
+spring.rabbitmq.ssl.enabled&#x3D;false # Whether to enable SSL support.
+spring.rabbitmq.ssl.key-store&#x3D; # Path to the key store that holds the SSL certificate.
+spring.rabbitmq.ssl.key-store-password&#x3D; # Password used to access the key store.
+spring.rabbitmq.ssl.key-store-type&#x3D;PKCS12 # Key store type.
+spring.rabbitmq.ssl.trust-store&#x3D; # Trust store that holds SSL certificates.
+spring.rabbitmq.ssl.trust-store-password&#x3D; # Password used to access the trust store.
+spring.rabbitmq.ssl.trust-store-type&#x3D;JKS # Trust store type.
+spring.rabbitmq.ssl.validate-server-certificate&#x3D;true # Whether to enable server side certificate validation.
+spring.rabbitmq.ssl.verify-hostname&#x3D;true # Whether to enable hostname verification.
+spring.rabbitmq.template.default-receive-queue&#x3D; # Name of the default queue to receive messages from when none is specified explicitly.
+spring.rabbitmq.template.exchange&#x3D; # Name of the default exchange to use for send operations.
+spring.rabbitmq.template.mandatory&#x3D; # Whether to enable mandatory messages.
+spring.rabbitmq.template.receive-timeout&#x3D; # Timeout for &#96;receive()&#96; operations.
+spring.rabbitmq.template.reply-timeout&#x3D; # Timeout for &#96;sendAndReceive()&#96; operations.
+spring.rabbitmq.template.retry.enabled&#x3D;false # Whether publishing retries are enabled.
+spring.rabbitmq.template.retry.initial-interval&#x3D;1000ms # Duration between the first and second attempt to deliver a message.
+spring.rabbitmq.template.retry.max-attempts&#x3D;3 # Maximum number of attempts to deliver a message.
+spring.rabbitmq.template.retry.max-interval&#x3D;10000ms # Maximum duration between attempts.
+spring.rabbitmq.template.retry.multiplier&#x3D;1 # Multiplier to apply to the previous retry interval.
+spring.rabbitmq.template.routing-key&#x3D; # Value of a default routing key to use for send operations.
+spring.rabbitmq.username&#x3D;guest # Login user to authenticate to the broker.
+spring.rabbitmq.virtual-host&#x3D; # Virtual host to use when connecting to the broker.
+ 
+ 
+# ----------------------------------------
+# ACTUATOR PROPERTIES
+# ----------------------------------------
+ 
+# MANAGEMENT HTTP SERVER (ManagementServerProperties)
+management.server.add-application-context-header&#x3D;false # Add the &quot;X-Application-Context&quot; HTTP header in each response.
+management.server.address&#x3D; # Network address to which the management endpoints should bind. Requires a custom management.server.port.
+management.server.port&#x3D; # Management endpoint HTTP port (uses the same port as the application by default). Configure a different port to use management-specific SSL.
+management.server.servlet.context-path&#x3D; # Management endpoint context-path (for instance, &#96;&#x2F;management&#96;). Requires a custom management.server.port.
+management.server.ssl.ciphers&#x3D; # Supported SSL ciphers.
+management.server.ssl.client-auth&#x3D; # Client authentication mode.
+management.server.ssl.enabled&#x3D;true # Whether to enable SSL support.
+management.server.ssl.enabled-protocols&#x3D; # Enabled SSL protocols.
+management.server.ssl.key-alias&#x3D; # Alias that identifies the key in the key store.
+management.server.ssl.key-password&#x3D; # Password used to access the key in the key store.
+management.server.ssl.key-store&#x3D; # Path to the key store that holds the SSL certificate (typically a jks file).
+management.server.ssl.key-store-password&#x3D; # Password used to access the key store.
+management.server.ssl.key-store-provider&#x3D; # Provider for the key store.
+management.server.ssl.key-store-type&#x3D; # Type of the key store.
+management.server.ssl.protocol&#x3D;TLS # SSL protocol to use.
+management.server.ssl.trust-store&#x3D; # Trust store that holds SSL certificates.
+management.server.ssl.trust-store-password&#x3D; # Password used to access the trust store.
+management.server.ssl.trust-store-provider&#x3D; # Provider for the trust store.
+management.server.ssl.trust-store-type&#x3D; # Type of the trust store.
+ 
+# CLOUDFOUNDRY
+management.cloudfoundry.enabled&#x3D;true # Whether to enable extended Cloud Foundry actuator endpoints.
+management.cloudfoundry.skip-ssl-validation&#x3D;false # Whether to skip SSL verification for Cloud Foundry actuator endpoint security calls.
+ 
+# ENDPOINTS GENERAL CONFIGURATION
+management.endpoints.enabled-by-default&#x3D; # Whether to enable or disable all endpoints by default.
+ 
+# ENDPOINTS JMX CONFIGURATION (JmxEndpointProperties)
+management.endpoints.jmx.domain&#x3D;org.springframework.boot # Endpoints JMX domain name. Fallback to &#39;spring.jmx.default-domain&#39; if set.
+management.endpoints.jmx.exposure.include&#x3D;* # Endpoint IDs that should be included or &#39;*&#39; for all.
+management.endpoints.jmx.exposure.exclude&#x3D; # Endpoint IDs that should be excluded or &#39;*&#39; for all.
+management.endpoints.jmx.static-names&#x3D; # Additional static properties to append to all ObjectNames of MBeans representing Endpoints.
+ 
+# ENDPOINTS WEB CONFIGURATION (WebEndpointProperties)
+management.endpoints.web.exposure.include&#x3D;health,info # Endpoint IDs that should be included or &#39;*&#39; for all.
+management.endpoints.web.exposure.exclude&#x3D; # Endpoint IDs that should be excluded or &#39;*&#39; for all.
+management.endpoints.web.base-path&#x3D;&#x2F;actuator # Base path for Web endpoints. Relative to server.servlet.context-path or management.server.servlet.context-path if management.server.port is configured.
+management.endpoints.web.path-mapping&#x3D; # Mapping between endpoint IDs and the path that should expose them.
+ 
+# ENDPOINTS CORS CONFIGURATION (CorsEndpointProperties)
+management.endpoints.web.cors.allow-credentials&#x3D; # Whether credentials are supported. When not set, credentials are not supported.
+management.endpoints.web.cors.allowed-headers&#x3D; # Comma-separated list of headers to allow in a request. &#39;*&#39; allows all headers.
+management.endpoints.web.cors.allowed-methods&#x3D; # Comma-separated list of methods to allow. &#39;*&#39; allows all methods. When not set, defaults to GET.
+management.endpoints.web.cors.allowed-origins&#x3D; # Comma-separated list of origins to allow. &#39;*&#39; allows all origins. When not set, CORS support is disabled.
+management.endpoints.web.cors.exposed-headers&#x3D; # Comma-separated list of headers to include in a response.
+management.endpoints.web.cors.max-age&#x3D;1800s # How long the response from a pre-flight request can be cached by clients. If a duration suffix is not specified, seconds will be used.
+ 
+# AUDIT EVENTS ENDPOINT (AuditEventsEndpoint)
+management.endpoint.auditevents.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.auditevents.enabled&#x3D;true # Whether to enable the auditevents endpoint.
+ 
+# BEANS ENDPOINT (BeansEndpoint)
+management.endpoint.beans.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.beans.enabled&#x3D;true # Whether to enable the beans endpoint.
+ 
+# CACHES ENDPOINT (CachesEndpoint)
+management.endpoint.caches.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.caches.enabled&#x3D;true # Whether to enable the caches endpoint.
+ 
+# CONDITIONS REPORT ENDPOINT (ConditionsReportEndpoint)
+management.endpoint.conditions.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.conditions.enabled&#x3D;true # Whether to enable the conditions endpoint.
+ 
+# CONFIGURATION PROPERTIES REPORT ENDPOINT (ConfigurationPropertiesReportEndpoint, ConfigurationPropertiesReportEndpointProperties)
+management.endpoint.configprops.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.configprops.enabled&#x3D;true # Whether to enable the configprops endpoint.
+management.endpoint.configprops.keys-to-sanitize&#x3D;password,secret,key,token,.*credentials.*,vcap_services,sun.java.command # Keys that should be sanitized. Keys can be simple strings that the property ends with or regular expressions.
+ 
+# ENVIRONMENT ENDPOINT (EnvironmentEndpoint, EnvironmentEndpointProperties)
+management.endpoint.env.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.env.enabled&#x3D;true # Whether to enable the env endpoint.
+management.endpoint.env.keys-to-sanitize&#x3D;password,secret,key,token,.*credentials.*,vcap_services,sun.java.command # Keys that should be sanitized. Keys can be simple strings that the property ends with or regular expressions.
+ 
+# FLYWAY ENDPOINT (FlywayEndpoint)
+management.endpoint.flyway.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.flyway.enabled&#x3D;true # Whether to enable the flyway endpoint.
+ 
+# HEALTH ENDPOINT (HealthEndpoint, HealthEndpointProperties)
+management.endpoint.health.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.health.enabled&#x3D;true # Whether to enable the health endpoint.
+management.endpoint.health.roles&#x3D; # Roles used to determine whether or not a user is authorized to be shown details. When empty, all authenticated users are authorized.
+management.endpoint.health.show-details&#x3D;never # When to show full health details.
+ 
+# HEAP DUMP ENDPOINT (HeapDumpWebEndpoint)
+management.endpoint.heapdump.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.heapdump.enabled&#x3D;true # Whether to enable the heapdump endpoint.
+ 
+# HTTP TRACE ENDPOINT (HttpTraceEndpoint)
+management.endpoint.httptrace.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.httptrace.enabled&#x3D;true # Whether to enable the httptrace endpoint.
+ 
+# INFO ENDPOINT (InfoEndpoint)
+info&#x3D; # Arbitrary properties to add to the info endpoint.
+management.endpoint.info.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.info.enabled&#x3D;true # Whether to enable the info endpoint.
+ 
+# INTEGRATION GRAPH ENDPOINT (IntegrationGraphEndpoint)
+management.endpoint.integrationgraph.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.integrationgraph.enabled&#x3D;true # Whether to enable the integrationgraph endpoint.
+ 
+# JOLOKIA ENDPOINT (JolokiaProperties)
+management.endpoint.jolokia.config.*&#x3D; # Jolokia settings. Refer to the documentation of Jolokia for more details.
+management.endpoint.jolokia.enabled&#x3D;true # Whether to enable the jolokia endpoint.
+ 
+# LIQUIBASE ENDPOINT (LiquibaseEndpoint)
+management.endpoint.liquibase.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.liquibase.enabled&#x3D;true # Whether to enable the liquibase endpoint.
+ 
+# LOG FILE ENDPOINT (LogFileWebEndpoint, LogFileWebEndpointProperties)
+management.endpoint.logfile.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.logfile.enabled&#x3D;true # Whether to enable the logfile endpoint.
+management.endpoint.logfile.external-file&#x3D; # External Logfile to be accessed. Can be used if the logfile is written by output redirect and not by the logging system itself.
+ 
+# LOGGERS ENDPOINT (LoggersEndpoint)
+management.endpoint.loggers.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.loggers.enabled&#x3D;true # Whether to enable the loggers endpoint.
+ 
+# REQUEST MAPPING ENDPOINT  (MappingsEndpoint)
+management.endpoint.mappings.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.mappings.enabled&#x3D;true # Whether to enable the mappings endpoint.
+ 
+# METRICS ENDPOINT (MetricsEndpoint)
+management.endpoint.metrics.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.metrics.enabled&#x3D;true # Whether to enable the metrics endpoint.
+ 
+# PROMETHEUS ENDPOINT (PrometheusScrapeEndpoint)
+management.endpoint.prometheus.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.prometheus.enabled&#x3D;true # Whether to enable the prometheus endpoint.
+ 
+# SCHEDULED TASKS ENDPOINT (ScheduledTasksEndpoint)
+management.endpoint.scheduledtasks.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.scheduledtasks.enabled&#x3D;true # Whether to enable the scheduledtasks endpoint.
+ 
+# SESSIONS ENDPOINT (SessionsEndpoint)
+management.endpoint.sessions.enabled&#x3D;true # Whether to enable the sessions endpoint.
+ 
+# SHUTDOWN ENDPOINT (ShutdownEndpoint)
+management.endpoint.shutdown.enabled&#x3D;false # Whether to enable the shutdown endpoint.
+ 
+# THREAD DUMP ENDPOINT (ThreadDumpEndpoint)
+management.endpoint.threaddump.cache.time-to-live&#x3D;0ms # Maximum time that a response can be cached.
+management.endpoint.threaddump.enabled&#x3D;true # Whether to enable the threaddump endpoint.
+ 
+# HEALTH INDICATORS
+management.health.db.enabled&#x3D;true # Whether to enable database health check.
+management.health.cassandra.enabled&#x3D;true # Whether to enable Cassandra health check.
+management.health.couchbase.enabled&#x3D;true # Whether to enable Couchbase health check.
+management.health.defaults.enabled&#x3D;true # Whether to enable default health indicators.
+management.health.diskspace.enabled&#x3D;true # Whether to enable disk space health check.
+management.health.diskspace.path&#x3D; # Path used to compute the available disk space.
+management.health.diskspace.threshold&#x3D;10MB # Minimum disk space that should be available.
+management.health.elasticsearch.enabled&#x3D;true # Whether to enable Elasticsearch health check.
+management.health.elasticsearch.indices&#x3D; # Comma-separated index names.
+management.health.elasticsearch.response-timeout&#x3D;100ms # Time to wait for a response from the cluster.
+management.health.influxdb.enabled&#x3D;true # Whether to enable InfluxDB health check.
+management.health.jms.enabled&#x3D;true # Whether to enable JMS health check.
+management.health.ldap.enabled&#x3D;true # Whether to enable LDAP health check.
+management.health.mail.enabled&#x3D;true # Whether to enable Mail health check.
+management.health.mongo.enabled&#x3D;true # Whether to enable MongoDB health check.
+management.health.neo4j.enabled&#x3D;true # Whether to enable Neo4j health check.
+management.health.rabbit.enabled&#x3D;true # Whether to enable RabbitMQ health check.
+management.health.redis.enabled&#x3D;true # Whether to enable Redis health check.
+management.health.solr.enabled&#x3D;true # Whether to enable Solr health check.
+management.health.status.http-mapping&#x3D; # Mapping of health statuses to HTTP status codes. By default, registered health statuses map to sensible defaults (for example, UP maps to 200).
+management.health.status.order&#x3D;DOWN,OUT_OF_SERVICE,UP,UNKNOWN # Comma-separated list of health statuses in order of severity.
+ 
+# HTTP TRACING (HttpTraceProperties)
+management.trace.http.enabled&#x3D;true # Whether to enable HTTP request-response tracing.
+management.trace.http.include&#x3D;request-headers,response-headers,cookies,errors # Items to be included in the trace.
+ 
+# INFO CONTRIBUTORS (InfoContributorProperties)
+management.info.build.enabled&#x3D;true # Whether to enable build info.
+management.info.defaults.enabled&#x3D;true # Whether to enable default info contributors.
+management.info.env.enabled&#x3D;true # Whether to enable environment info.
+management.info.git.enabled&#x3D;true # Whether to enable git info.
+management.info.git.mode&#x3D;simple # Mode to use to expose git information.
+ 
+# METRICS
+management.metrics.distribution.maximum-expected-value.*&#x3D; # Maximum value that meter IDs starting-with the specified name are expected to observe.
+management.metrics.distribution.minimum-expected-value.*&#x3D; # Minimum value that meter IDs starting-with the specified name are expected to observe.
+management.metrics.distribution.percentiles.*&#x3D; # Specific computed non-aggregable percentiles to ship to the backend for meter IDs starting-with the specified name.
+management.metrics.distribution.percentiles-histogram.*&#x3D; # Whether meter IDs starting with the specified name should publish percentile histograms.
+management.metrics.distribution.sla.*&#x3D; # Specific SLA boundaries for meter IDs starting-with the specified name. The longest match wins.
+management.metrics.enable.*&#x3D; # Whether meter IDs starting-with the specified name should be enabled. The longest match wins, the key &#96;all&#96; can also be used to configure all meters.
+management.metrics.export.appoptics.api-token&#x3D; # AppOptics API token.
+management.metrics.export.appoptics.batch-size&#x3D;500 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.appoptics.connect-timeout&#x3D;5s # Connection timeout for requests to this backend.
+management.metrics.export.appoptics.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.appoptics.host-tag&#x3D;instance # Tag that will be mapped to &quot;@host&quot; when shipping metrics to AppOptics.
+management.metrics.export.appoptics.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.appoptics.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.appoptics.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.appoptics.uri&#x3D;https:&#x2F;&#x2F;api.appoptics.com&#x2F;v1&#x2F;measurements # URI to ship metrics to.
+management.metrics.export.atlas.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.atlas.config-refresh-frequency&#x3D;10s # Frequency for refreshing config settings from the LWC service.
+management.metrics.export.atlas.config-time-to-live&#x3D;150s # Time to live for subscriptions from the LWC service.
+management.metrics.export.atlas.config-uri&#x3D;http:&#x2F;&#x2F;localhost:7101&#x2F;lwc&#x2F;api&#x2F;v1&#x2F;expressions&#x2F;local-dev # URI for the Atlas LWC endpoint to retrieve current subscriptions.
+management.metrics.export.atlas.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.atlas.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.atlas.eval-uri&#x3D;http:&#x2F;&#x2F;localhost:7101&#x2F;lwc&#x2F;api&#x2F;v1&#x2F;evaluate # URI for the Atlas LWC endpoint to evaluate the data for a subscription.
+management.metrics.export.atlas.lwc-enabled&#x3D;false # Whether to enable streaming to Atlas LWC.
+management.metrics.export.atlas.meter-time-to-live&#x3D;15m # Time to live for meters that do not have any activity. After this period the meter will be considered expired and will not get reported.
+management.metrics.export.atlas.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.atlas.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.atlas.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.atlas.uri&#x3D;http:&#x2F;&#x2F;localhost:7101&#x2F;api&#x2F;v1&#x2F;publish # URI of the Atlas server.
+management.metrics.export.datadog.api-key&#x3D; # Datadog API key.
+management.metrics.export.datadog.application-key&#x3D; # Datadog application key. Not strictly required, but improves the Datadog experience by sending meter descriptions, types, and base units to Datadog.
+management.metrics.export.datadog.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.datadog.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.datadog.descriptions&#x3D;true # Whether to publish descriptions metadata to Datadog. Turn this off to minimize the amount of metadata sent.
+management.metrics.export.datadog.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.datadog.host-tag&#x3D;instance # Tag that will be mapped to &quot;host&quot; when shipping metrics to Datadog.
+management.metrics.export.datadog.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.datadog.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.datadog.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.datadog.uri&#x3D;https:&#x2F;&#x2F;app.datadoghq.com # URI to ship metrics to. If you need to publish metrics to an internal proxy en-route to Datadog, you can define the location of the proxy with this.
+management.metrics.export.dynatrace.api-token&#x3D; # Dynatrace authentication token.
+management.metrics.export.dynatrace.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.dynatrace.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.dynatrace.device-id&#x3D; # ID of the custom device that is exporting metrics to Dynatrace.
+management.metrics.export.dynatrace.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.dynatrace.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.dynatrace.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.dynatrace.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.dynatrace.technology-type&#x3D;java # Technology type for exported metrics. Used to group metrics under a logical technology name in the Dynatrace UI.
+management.metrics.export.dynatrace.uri&#x3D; # URI to ship metrics to. Should be used for SaaS, self managed instances or to en-route through an internal proxy.
+management.metrics.export.elastic.auto-create-index&#x3D;true # Whether to create the index automatically if it does not exist.
+management.metrics.export.elastic.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.elastic.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.elastic.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.elastic.host&#x3D;http:&#x2F;&#x2F;localhost:9200 # Host to export metrics to.
+management.metrics.export.elastic.index&#x3D;metrics # Index to export metrics to.
+management.metrics.export.elastic.index-date-format&#x3D;yyyy-MM # Index date format used for rolling indices. Appended to the index name, preceded by a &#39;-&#39;.
+management.metrics.export.elastic.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.elastic.password&#x3D; # Login password of the Elastic server.
+management.metrics.export.elastic.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.elastic.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.elastic.timestamp-field-name&#x3D;@timestamp # Name of the timestamp field.
+management.metrics.export.elastic.user-name&#x3D; # Login user of the Elastic server.
+management.metrics.export.ganglia.addressing-mode&#x3D;multicast # UDP addressing mode, either unicast or multicast.
+management.metrics.export.ganglia.duration-units&#x3D;milliseconds # Base time unit used to report durations.
+management.metrics.export.ganglia.enabled&#x3D;true # Whether exporting of metrics to Ganglia is enabled.
+management.metrics.export.ganglia.host&#x3D;localhost # Host of the Ganglia server to receive exported metrics.
+management.metrics.export.ganglia.port&#x3D;8649 # Port of the Ganglia server to receive exported metrics.
+management.metrics.export.ganglia.protocol-version&#x3D;3.1 # Ganglia protocol version. Must be either 3.1 or 3.0.
+management.metrics.export.ganglia.rate-units&#x3D;seconds # Base time unit used to report rates.
+management.metrics.export.ganglia.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.ganglia.time-to-live&#x3D;1 # Time to live for metrics on Ganglia. Set the multi-cast Time-To-Live to be one greater than the number of hops (routers) between the hosts.
+management.metrics.export.graphite.duration-units&#x3D;milliseconds # Base time unit used to report durations.
+management.metrics.export.graphite.enabled&#x3D;true # Whether exporting of metrics to Graphite is enabled.
+management.metrics.export.graphite.host&#x3D;localhost # Host of the Graphite server to receive exported metrics.
+management.metrics.export.graphite.port&#x3D;2004 # Port of the Graphite server to receive exported metrics.
+management.metrics.export.graphite.protocol&#x3D;pickled # Protocol to use while shipping data to Graphite.
+management.metrics.export.graphite.rate-units&#x3D;seconds # Base time unit used to report rates.
+management.metrics.export.graphite.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.graphite.tags-as-prefix&#x3D; # For the default naming convention, turn the specified tag keys into part of the metric prefix.
+management.metrics.export.humio.api-token&#x3D; # Humio API token.
+management.metrics.export.humio.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.humio.connect-timeout&#x3D;5s # Connection timeout for requests to this backend.
+management.metrics.export.humio.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.humio.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.humio.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.humio.repository&#x3D;sandbox # Name of the repository to publish metrics to.
+management.metrics.export.humio.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.humio.tags.*&#x3D; # Humio tags describing the data source in which metrics will be stored. Humio tags are a distinct concept from Micrometer&#39;s tags. Micrometer&#39;s tags are used to divide metrics along dimensional boundaries.
+management.metrics.export.humio.uri&#x3D;https:&#x2F;&#x2F;cloud.humio.com # URI to ship metrics to. If you need to publish metrics to an internal proxy en-route to Humio, you can define the location of the proxy with this.
+management.metrics.export.influx.auto-create-db&#x3D;true # Whether to create the Influx database if it does not exist before attempting to publish metrics to it.
+management.metrics.export.influx.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.influx.compressed&#x3D;true # Whether to enable GZIP compression of metrics batches published to Influx.
+management.metrics.export.influx.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.influx.consistency&#x3D;one # Write consistency for each point.
+management.metrics.export.influx.db&#x3D;mydb # Tag that will be mapped to &quot;host&quot; when shipping metrics to Influx.
+management.metrics.export.influx.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.influx.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.influx.password&#x3D; # Login password of the Influx server.
+management.metrics.export.influx.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.influx.retention-duration&#x3D; # Time period for which Influx should retain data in the current database.
+management.metrics.export.influx.retention-shard-duration&#x3D; # Time range covered by a shard group.
+management.metrics.export.influx.retention-policy&#x3D; # Retention policy to use (Influx writes to the DEFAULT retention policy if one is not specified).
+management.metrics.export.influx.retention-replication-factor&#x3D; # How many copies of the data are stored in the cluster.
+management.metrics.export.influx.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.influx.uri&#x3D;http:&#x2F;&#x2F;localhost:8086 # URI of the Influx server.
+management.metrics.export.influx.user-name&#x3D; # Login user of the Influx server.
+management.metrics.export.jmx.domain&#x3D;metrics # Metrics JMX domain name.
+management.metrics.export.jmx.enabled&#x3D;true # Whether exporting of metrics to JMX is enabled.
+management.metrics.export.jmx.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.kairos.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.kairos.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.kairos.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.kairos.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.kairos.password&#x3D; # Login password of the KairosDB server.
+management.metrics.export.kairos.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.kairos.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.kairos.uri&#x3D; localhost:8080&#x2F;api&#x2F;v1&#x2F;datapoints # URI of the KairosDB server.
+management.metrics.export.kairos.user-name&#x3D; # Login user of the KairosDB server.
+management.metrics.export.newrelic.account-id&#x3D; # New Relic account ID.
+management.metrics.export.newrelic.api-key&#x3D; # New Relic API key.
+management.metrics.export.newrelic.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.newrelic.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.newrelic.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.newrelic.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.newrelic.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.newrelic.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.newrelic.uri&#x3D;https:&#x2F;&#x2F;insights-collector.newrelic.com # URI to ship metrics to.
+management.metrics.export.prometheus.descriptions&#x3D;true # Whether to enable publishing descriptions as part of the scrape payload to Prometheus. Turn this off to minimize the amount of data sent on each scrape.
+management.metrics.export.prometheus.enabled&#x3D;true # Whether exporting of metrics to Prometheus is enabled.
+management.metrics.export.prometheus.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.prometheus.pushgateway.base-url&#x3D;localhost:9091 # Base URL for the Pushgateway.
+management.metrics.export.prometheus.pushgateway.enabled&#x3D;false # Enable publishing via a Prometheus Pushgateway.
+management.metrics.export.prometheus.pushgateway.grouping-key&#x3D; # Grouping key for the pushed metrics.
+management.metrics.export.prometheus.pushgateway.job&#x3D; # Job identifier for this application instance.
+management.metrics.export.prometheus.pushgateway.push-rate&#x3D;1m # Frequency with which to push metrics.
+management.metrics.export.prometheus.pushgateway.shutdown-operation&#x3D; # Operation that should be performed on shutdown.
+management.metrics.export.signalfx.access-token&#x3D; # SignalFX access token.
+management.metrics.export.signalfx.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.signalfx.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.signalfx.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.signalfx.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.signalfx.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.signalfx.source&#x3D; # Uniquely identifies the app instance that is publishing metrics to SignalFx. Defaults to the local host name.
+management.metrics.export.signalfx.step&#x3D;10s # Step size (i.e. reporting frequency) to use.
+management.metrics.export.signalfx.uri&#x3D;https:&#x2F;&#x2F;ingest.signalfx.com # URI to ship metrics to.
+management.metrics.export.simple.enabled&#x3D;true # Whether, in the absence of any other exporter, exporting of metrics to an in-memory backend is enabled.
+management.metrics.export.simple.mode&#x3D;cumulative # Counting mode.
+management.metrics.export.simple.step&#x3D;1m # Step size (i.e. reporting frequency) to use.
+management.metrics.export.statsd.enabled&#x3D;true # Whether exporting of metrics to StatsD is enabled.
+management.metrics.export.statsd.flavor&#x3D;datadog # StatsD line protocol to use.
+management.metrics.export.statsd.host&#x3D;localhost # Host of the StatsD server to receive exported metrics.
+management.metrics.export.statsd.max-packet-length&#x3D;1400 # Total length of a single payload should be kept within your network&#39;s MTU.
+management.metrics.export.statsd.polling-frequency&#x3D;10s # How often gauges will be polled. When a gauge is polled, its value is recalculated and if the value has changed (or publishUnchangedMeters is true), it is sent to the StatsD server.
+management.metrics.export.statsd.port&#x3D;8125 # Port of the StatsD server to receive exported metrics.
+management.metrics.export.statsd.publish-unchanged-meters&#x3D;true # Whether to send unchanged meters to the StatsD server.
+management.metrics.export.wavefront.api-token&#x3D; # API token used when publishing metrics directly to the Wavefront API host.
+management.metrics.export.wavefront.batch-size&#x3D;10000 # Number of measurements per request to use for this backend. If more measurements are found, then multiple requests will be made.
+management.metrics.export.wavefront.connect-timeout&#x3D;1s # Connection timeout for requests to this backend.
+management.metrics.export.wavefront.enabled&#x3D;true # Whether exporting of metrics to this backend is enabled.
+management.metrics.export.wavefront.global-prefix&#x3D; # Global prefix to separate metrics originating from this app&#39;s white box instrumentation from those originating from other Wavefront integrations when viewed in the Wavefront UI.
+management.metrics.export.wavefront.num-threads&#x3D;2 # Number of threads to use with the metrics publishing scheduler.
+management.metrics.export.wavefront.read-timeout&#x3D;10s # Read timeout for requests to this backend.
+management.metrics.export.wavefront.source&#x3D; # Unique identifier for the app instance that is the source of metrics being published to Wavefront. Defaults to the local host name.
+management.metrics.export.wavefront.step&#x3D;10s # Step size (i.e. reporting frequency) to use.
+management.metrics.export.wavefront.uri&#x3D;https:&#x2F;&#x2F;longboard.wavefront.com # URI to ship metrics to.
+management.metrics.use-global-registry&#x3D;true # Whether auto-configured MeterRegistry implementations should be bound to the global static registry on Metrics.
+management.metrics.tags.*&#x3D; # Common tags that are applied to every meter.
+management.metrics.web.client.max-uri-tags&#x3D;100 # Maximum number of unique URI tag values allowed. After the max number of tag values is reached, metrics with additional tag values are denied by filter.
+management.metrics.web.client.requests-metric-name&#x3D;http.client.requests # Name of the metric for sent requests.
+management.metrics.web.server.auto-time-requests&#x3D;true # Whether requests handled by Spring MVC, WebFlux or Jersey should be automatically timed.
+management.metrics.web.server.max-uri-tags&#x3D;100 # Maximum number of unique URI tag values allowed. After the max number of tag values is reached, metrics with additional tag values are denied by filter.
+management.metrics.web.server.requests-metric-name&#x3D;http.server.requests # Name of the metric for received requests.
+ 
+ 
+# ----------------------------------------
+# DEVTOOLS PROPERTIES
+# ----------------------------------------
+ 
+# DEVTOOLS (DevToolsProperties)
+spring.devtools.add-properties&#x3D;true # Whether to enable development property defaults.
+spring.devtools.livereload.enabled&#x3D;true # Whether to enable a livereload.com-compatible server.
+spring.devtools.livereload.port&#x3D;35729 # Server port.
+spring.devtools.restart.additional-exclude&#x3D; # Additional patterns that should be excluded from triggering a full restart.
+spring.devtools.restart.additional-paths&#x3D; # Additional paths to watch for changes.
+spring.devtools.restart.enabled&#x3D;true # Whether to enable automatic restart.
+spring.devtools.restart.exclude&#x3D;META-INF&#x2F;maven&#x2F;**,META-INF&#x2F;resources&#x2F;**,resources&#x2F;**,static&#x2F;**,public&#x2F;**,templates&#x2F;**,**&#x2F;*Test.class,**&#x2F;*Tests.class,git.properties,META-INF&#x2F;build-info.properties # Patterns that should be excluded from triggering a full restart.
+spring.devtools.restart.log-condition-evaluation-delta&#x3D;true # Whether to log the condition evaluation delta upon restart.
+spring.devtools.restart.poll-interval&#x3D;1s # Amount of time to wait between polling for classpath changes.
+spring.devtools.restart.quiet-period&#x3D;400ms # Amount of quiet time required without any classpath changes before a restart is triggered.
+spring.devtools.restart.trigger-file&#x3D; # Name of a specific file that, when changed, triggers the restart check. If not specified, any classpath file change triggers the restart.
+ 
+# REMOTE DEVTOOLS (RemoteDevToolsProperties)
+spring.devtools.remote.context-path&#x3D;&#x2F;.~~spring-boot!~ # Context path used to handle the remote connection.
+spring.devtools.remote.proxy.host&#x3D; # The host of the proxy to use to connect to the remote application.
+spring.devtools.remote.proxy.port&#x3D; # The port of the proxy to use to connect to the remote application.
+spring.devtools.remote.restart.enabled&#x3D;true # Whether to enable remote restart.
+spring.devtools.remote.secret&#x3D; # A shared secret required to establish a connection (required to enable remote support).
+spring.devtools.remote.secret-header-name&#x3D;X-AUTH-TOKEN # HTTP header used to transfer the shared secret.
+ 
+ 
+# ----------------------------------------
+# TESTING PROPERTIES
+# ----------------------------------------
+ 
+spring.test.database.replace&#x3D;any # Type of existing DataSource to replace.
+spring.test.mockmvc.print&#x3D;default # MVC Print option.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">CrissMagic</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://www.crissmagic.cn/articles/2019/10/21/1571628717779.html">https://www.crissmagic.cn/articles/2019/10/21/1571628717779.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">CrissMagic</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                                    <span class="chip bg-color">后端</span>
+                                </a>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">觉得不错的话可以请作者喝可乐</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.JPG" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.JPG" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/articles/2019/10/24/1571884156680.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Git本地仓库关联、解除关联远程仓库流程及遇到的问题">
+                        
+                        <span class="card-title">Git本地仓库关联、解除关联远程仓库流程及遇到的问题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/" class="post-category">
+                                    软件部署
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+                        <span class="chip bg-color">问题解决</span>
+                    </a>
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/articles/2019/10/21/1571628649893.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Application.properties全配置（上）">
+                        
+                        <span class="card-title">Application.properties全配置（上）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    后端技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                        <span class="chip bg-color">后端</span>
+                    </a>
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">CrissMagic</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">55k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2019";
+                        var startMonth = "10";
+                        var startDate = "3";
+                        var startHour = "9";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn" target="_blank">渝ICP备19014189号-1</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/CrissMagic" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:whncriss@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

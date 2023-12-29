@@ -1,0 +1,1694 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Application.properties全配置（上）, 一人行者">
+    <meta name="description" content="CrissMagicBlog">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Application.properties全配置（上） | 一人行者</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="一人行者" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一人行者</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一人行者</div>
+        <div class="logo-desc">
+            
+            CrissMagicBlog
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Application.properties全配置（上）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                                <span class="chip bg-color">后端</span>
+                            </a>
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                后端技术
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-10-21
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    43 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <pre class="line-numbers language-none"><code class="language-none"># &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+# COMMON SPRING BOOT PROPERTIES
+#
+# This sample file is provided as a guideline. Do NOT copy it in its
+# entirety to your own application.               ^^^
+# &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+ 
+ 
+# ----------------------------------------
+# CORE PROPERTIES
+# ----------------------------------------
+debug&#x3D;false # Enable debug logs.
+trace&#x3D;false # Enable trace logs.
+ 
+# LOGGING
+logging.config&#x3D; # Location of the logging configuration file. For instance, &#96;classpath:logback.xml&#96; for Logback.
+logging.exception-conversion-word&#x3D;%wEx # Conversion word used when logging exceptions.
+logging.file&#x3D; # Log file name (for instance, &#96;myapp.log&#96;). Names can be an exact location or relative to the current directory.
+logging.file.max-history&#x3D;0 # Maximum of archive log files to keep. Only supported with the default logback setup.
+logging.file.max-size&#x3D;10MB # Maximum log file size. Only supported with the default logback setup.
+logging.group.*&#x3D; # Log groups to quickly change multiple loggers at the same time. For instance, &#96;logging.level.db&#x3D;org.hibernate,org.springframework.jdbc&#96;.
+logging.level.*&#x3D; # Log levels severity mapping. For instance, &#96;logging.level.org.springframework&#x3D;DEBUG&#96;.
+logging.path&#x3D; # Location of the log file. For instance, &#96;&#x2F;var&#x2F;log&#96;.
+logging.pattern.console&#x3D; # Appender pattern for output to the console. Supported only with the default Logback setup.
+logging.pattern.dateformat&#x3D;yyyy-MM-dd HH:mm:ss.SSS # Appender pattern for log date format. Supported only with the default Logback setup.
+logging.pattern.file&#x3D; # Appender pattern for output to a file. Supported only with the default Logback setup.
+logging.pattern.level&#x3D;%5p # Appender pattern for log level. Supported only with the default Logback setup.
+logging.register-shutdown-hook&#x3D;false # Register a shutdown hook for the logging system when it is initialized.
+ 
+# AOP
+spring.aop.auto&#x3D;true # Add @EnableAspectJAutoProxy.
+spring.aop.proxy-target-class&#x3D;true # Whether subclass-based (CGLIB) proxies are to be created (true), as opposed to standard Java interface-based proxies (false).
+ 
+# IDENTITY (ContextIdApplicationContextInitializer)
+spring.application.name&#x3D; # Application name.
+ 
+# ADMIN (SpringApplicationAdminJmxAutoConfiguration)
+spring.application.admin.enabled&#x3D;false # Whether to enable admin features for the application.
+spring.application.admin.jmx-name&#x3D;org.springframework.boot:type&#x3D;Admin,name&#x3D;SpringApplication # JMX name of the application admin MBean.
+ 
+# AUTO-CONFIGURATION
+spring.autoconfigure.exclude&#x3D; # Auto-configuration classes to exclude.
+ 
+# BANNER
+spring.banner.charset&#x3D;UTF-8 # Banner file encoding.
+spring.banner.location&#x3D;classpath:banner.txt # Banner text resource location.
+spring.banner.image.location&#x3D;classpath:banner.gif # Banner image file location (jpg or png can also be used).
+spring.banner.image.width&#x3D;76 # Width of the banner image in chars.
+spring.banner.image.height&#x3D; # Height of the banner image in chars (default based on image height).
+spring.banner.image.margin&#x3D;2 # Left hand image margin in chars.
+spring.banner.image.invert&#x3D;false # Whether images should be inverted for dark terminal themes.
+ 
+# SPRING CORE
+spring.beaninfo.ignore&#x3D;true # Whether to skip search of BeanInfo classes.
+ 
+# SPRING CACHE (CacheProperties)
+spring.cache.cache-names&#x3D; # Comma-separated list of cache names to create if supported by the underlying cache manager.
+spring.cache.caffeine.spec&#x3D; # The spec to use to create caches. See CaffeineSpec for more details on the spec format.
+spring.cache.couchbase.expiration&#x3D; # Entry expiration. By default the entries never expire. Note that this value is ultimately converted to seconds.
+spring.cache.ehcache.config&#x3D; # The location of the configuration file to use to initialize EhCache.
+spring.cache.infinispan.config&#x3D; # The location of the configuration file to use to initialize Infinispan.
+spring.cache.jcache.config&#x3D; # The location of the configuration file to use to initialize the cache manager.
+spring.cache.jcache.provider&#x3D; # Fully qualified name of the CachingProvider implementation to use to retrieve the JSR-107 compliant cache manager. Needed only if more than one JSR-107 implementation is available on the classpath.
+spring.cache.redis.cache-null-values&#x3D;true # Allow caching null values.
+spring.cache.redis.key-prefix&#x3D; # Key prefix.
+spring.cache.redis.time-to-live&#x3D; # Entry expiration. By default the entries never expire.
+spring.cache.redis.use-key-prefix&#x3D;true # Whether to use the key prefix when writing to Redis.
+spring.cache.type&#x3D; # Cache type. By default, auto-detected according to the environment.
+ 
+# SPRING CONFIG - using environment property only (ConfigFileApplicationListener)
+spring.config.additional-location&#x3D; # Config file locations used in addition to the defaults.
+spring.config.location&#x3D; # Config file locations that replace the defaults.
+spring.config.name&#x3D;application # Config file name.
+ 
+# HAZELCAST (HazelcastProperties)
+spring.hazelcast.config&#x3D; # The location of the configuration file to use to initialize Hazelcast.
+ 
+# PROJECT INFORMATION (ProjectInfoProperties)
+spring.info.build.encoding&#x3D;UTF-8 # File encoding.
+spring.info.build.location&#x3D;classpath:META-INF&#x2F;build-info.properties # Location of the generated build-info.properties file.
+spring.info.git.encoding&#x3D;UTF-8 # File encoding.
+spring.info.git.location&#x3D;classpath:git.properties # Location of the generated git.properties file.
+ 
+# JMX
+spring.jmx.default-domain&#x3D; # JMX domain name.
+spring.jmx.enabled&#x3D;true # Expose management beans to the JMX domain.
+spring.jmx.server&#x3D;mbeanServer # MBeanServer bean name.
+spring.jmx.unique-names&#x3D;false # Whether unique runtime object names should be ensured.
+ 
+# Email (MailProperties)
+spring.mail.default-encoding&#x3D;UTF-8 # Default MimeMessage encoding.
+spring.mail.host&#x3D; # SMTP server host. For instance, &#96;smtp.example.com&#96;.
+spring.mail.jndi-name&#x3D; # Session JNDI name. When set, takes precedence over other Session settings.
+spring.mail.password&#x3D; # Login password of the SMTP server.
+spring.mail.port&#x3D; # SMTP server port.
+spring.mail.properties.*&#x3D; # Additional JavaMail Session properties.
+spring.mail.protocol&#x3D;smtp # Protocol used by the SMTP server.
+spring.mail.test-connection&#x3D;false # Whether to test that the mail server is available on startup.
+spring.mail.username&#x3D; # Login user of the SMTP server.
+ 
+# APPLICATION SETTINGS (SpringApplication)
+spring.main.allow-bean-definition-overriding&#x3D;false # Whether bean definition overriding, by registering a definition with the same name as an existing definition, is allowed.
+spring.main.banner-mode&#x3D;console # Mode used to display the banner when the application runs.
+spring.main.sources&#x3D; # Sources (class names, package names, or XML resource locations) to include in the ApplicationContext.
+spring.main.web-application-type&#x3D; # Flag to explicitly request a specific type of web application. If not set, auto-detected based on the classpath.
+ 
+# FILE ENCODING (FileEncodingApplicationListener)
+spring.mandatory-file-encoding&#x3D; # Expected character encoding the application must use.
+ 
+# INTERNATIONALIZATION (MessageSourceProperties)
+spring.messages.always-use-message-format&#x3D;false # Whether to always apply the MessageFormat rules, parsing even messages without arguments.
+spring.messages.basename&#x3D;messages # Comma-separated list of basenames (essentially a fully-qualified classpath location), each following the ResourceBundle convention with relaxed support for slash based locations.
+spring.messages.cache-duration&#x3D; # Loaded resource bundle files cache duration. When not set, bundles are cached forever. If a duration suffix is not specified, seconds will be used.
+spring.messages.encoding&#x3D;UTF-8 # Message bundles encoding.
+spring.messages.fallback-to-system-locale&#x3D;true # Whether to fall back to the system Locale if no files for a specific Locale have been found.
+spring.messages.use-code-as-default-message&#x3D;false # Whether to use the message code as the default message instead of throwing a &quot;NoSuchMessageException&quot;. Recommended during development only.
+ 
+# OUTPUT
+spring.output.ansi.enabled&#x3D;detect # Configures the ANSI output.
+ 
+# PID FILE (ApplicationPidFileWriter)
+spring.pid.fail-on-write-error&#x3D; # Fails if ApplicationPidFileWriter is used but it cannot write the PID file.
+spring.pid.file&#x3D; # Location of the PID file to write (if ApplicationPidFileWriter is used).
+ 
+# PROFILES
+spring.profiles.active&#x3D; # Comma-separated list of active profiles. Can be overridden by a command line switch.
+spring.profiles.include&#x3D; # Unconditionally activate the specified comma-separated list of profiles (or list of profiles if using YAML).
+ 
+# QUARTZ SCHEDULER (QuartzProperties)
+spring.quartz.auto-startup&#x3D;true # Whether to automatically start the scheduler after initialization.
+spring.quartz.jdbc.comment-prefix&#x3D;-- # Prefix for single-line comments in SQL initialization scripts.
+spring.quartz.jdbc.initialize-schema&#x3D;embedded # Database schema initialization mode.
+spring.quartz.jdbc.schema&#x3D;classpath:org&#x2F;quartz&#x2F;impl&#x2F;jdbcjobstore&#x2F;tables_@@platform@@.sql # Path to the SQL file to use to initialize the database schema.
+spring.quartz.job-store-type&#x3D;memory # Quartz job store type.
+spring.quartz.overwrite-existing-jobs&#x3D;false # Whether configured jobs should overwrite existing job definitions.
+spring.quartz.properties.*&#x3D; # Additional Quartz Scheduler properties.
+spring.quartz.scheduler-name&#x3D;quartzScheduler # Name of the scheduler.
+spring.quartz.startup-delay&#x3D;0s # Delay after which the scheduler is started once initialization completes.
+spring.quartz.wait-for-jobs-to-complete-on-shutdown&#x3D;false # Whether to wait for running jobs to complete on shutdown.
+ 
+# REACTOR (ReactorCoreProperties)
+spring.reactor.stacktrace-mode.enabled&#x3D;false # Whether Reactor should collect stacktrace information at runtime.
+ 
+# SENDGRID (SendGridAutoConfiguration)
+spring.sendgrid.api-key&#x3D; # SendGrid API key.
+spring.sendgrid.proxy.host&#x3D; # SendGrid proxy host.
+spring.sendgrid.proxy.port&#x3D; # SendGrid proxy port.
+ 
+# TASK EXECUTION  (TaskExecutionProperties)
+spring.task.execution.pool.allow-core-thread-timeout&#x3D;true # Whether core threads are allowed to time out. This enables dynamic growing and shrinking of the pool.
+spring.task.execution.pool.core-size&#x3D;8 # Core number of threads.
+spring.task.execution.pool.keep-alive&#x3D;60s # Time limit for which threads may remain idle before being terminated.
+spring.task.execution.pool.max-size&#x3D; # Maximum allowed number of threads. If tasks are filling up the queue, the pool can expand up to that size to accommodate the load. Ignored if the queue is unbounded.
+spring.task.execution.pool.queue-capacity&#x3D; # Queue capacity. An unbounded capacity does not increase the pool and therefore ignores the &quot;max-size&quot; property.
+spring.task.execution.thread-name-prefix&#x3D;task- # Prefix to use for the names of newly created threads.
+ 
+# TASK SCHEDULING  (TaskSchedulingProperties)
+spring.task.scheduling.pool.size&#x3D;1 # Maximum allowed number of threads.
+spring.task.scheduling.thread-name-prefix&#x3D;scheduling- # Prefix to use for the names of newly created threads.
+ 
+# ----------------------------------------
+# WEB PROPERTIES
+# ----------------------------------------
+ 
+# EMBEDDED SERVER CONFIGURATION (ServerProperties)
+server.address&#x3D; # Network address to which the server should bind.
+server.compression.enabled&#x3D;false # Whether response compression is enabled.
+server.compression.excluded-user-agents&#x3D; # Comma-separated list of user agents for which responses should not be compressed.
+server.compression.mime-types&#x3D;text&#x2F;html,text&#x2F;xml,text&#x2F;plain,text&#x2F;css,text&#x2F;javascript,application&#x2F;javascript,application&#x2F;json,application&#x2F;xml # Comma-separated list of MIME types that should be compressed.
+server.compression.min-response-size&#x3D;2KB # Minimum &quot;Content-Length&quot; value that is required for compression to be performed.
+server.connection-timeout&#x3D; # Time that connectors wait for another HTTP request before closing the connection. When not set, the connector&#39;s container-specific default is used. Use a value of -1 to indicate no (that is, an infinite) timeout.
+server.error.include-exception&#x3D;false # Include the &quot;exception&quot; attribute.
+server.error.include-stacktrace&#x3D;never # When to include a &quot;stacktrace&quot; attribute.
+server.error.path&#x3D;&#x2F;error # Path of the error controller.
+server.error.whitelabel.enabled&#x3D;true # Whether to enable the default error page displayed in browsers in case of a server error.
+server.http2.enabled&#x3D;false # Whether to enable HTTP&#x2F;2 support, if the current environment supports it.
+server.jetty.acceptors&#x3D;-1 # Number of acceptor threads to use. When the value is -1, the default, the number of acceptors is derived from the operating environment.
+server.jetty.accesslog.append&#x3D;false # Append to log.
+server.jetty.accesslog.date-format&#x3D;dd&#x2F;MMM&#x2F;yyyy:HH:mm:ss Z # Timestamp format of the request log.
+server.jetty.accesslog.enabled&#x3D;false # Enable access log.
+server.jetty.accesslog.extended-format&#x3D;false # Enable extended NCSA format.
+server.jetty.accesslog.file-date-format&#x3D; # Date format to place in log file name.
+server.jetty.accesslog.filename&#x3D; # Log filename. If not specified, logs redirect to &quot;System.err&quot;.
+server.jetty.accesslog.locale&#x3D; # Locale of the request log.
+server.jetty.accesslog.log-cookies&#x3D;false # Enable logging of the request cookies.
+server.jetty.accesslog.log-latency&#x3D;false # Enable logging of request processing time.
+server.jetty.accesslog.log-server&#x3D;false # Enable logging of the request hostname.
+server.jetty.accesslog.retention-period&#x3D;31 # Number of days before rotated log files are deleted.
+server.jetty.accesslog.time-zone&#x3D;GMT # Timezone of the request log.
+server.jetty.max-http-post-size&#x3D;200000B # Maximum size of the HTTP post or put content.
+server.jetty.selectors&#x3D;-1 # Number of selector threads to use. When the value is -1, the default, the number of selectors is derived from the operating environment.
+server.max-http-header-size&#x3D;8KB # Maximum size of the HTTP message header.
+server.port&#x3D;8080 # Server HTTP port.
+server.server-header&#x3D; # Value to use for the Server response header (if empty, no header is sent).
+server.use-forward-headers&#x3D; # Whether X-Forwarded-* headers should be applied to the HttpRequest.
+server.servlet.context-parameters.*&#x3D; # Servlet context init parameters.
+server.servlet.context-path&#x3D; # Context path of the application.
+server.servlet.application-display-name&#x3D;application # Display name of the application.
+server.servlet.jsp.class-name&#x3D;org.apache.jasper.servlet.JspServlet # Class name of the servlet to use for JSPs.
+server.servlet.jsp.init-parameters.*&#x3D; # Init parameters used to configure the JSP servlet.
+server.servlet.jsp.registered&#x3D;true # Whether the JSP servlet is registered.
+server.servlet.session.cookie.comment&#x3D; # Comment for the session cookie.
+server.servlet.session.cookie.domain&#x3D; # Domain for the session cookie.
+server.servlet.session.cookie.http-only&#x3D; # Whether to use &quot;HttpOnly&quot; cookies for session cookies.
+server.servlet.session.cookie.max-age&#x3D; # Maximum age of the session cookie. If a duration suffix is not specified, seconds will be used.
+server.servlet.session.cookie.name&#x3D; # Session cookie name.
+server.servlet.session.cookie.path&#x3D; # Path of the session cookie.
+server.servlet.session.cookie.secure&#x3D; # Whether to always mark the session cookie as secure.
+server.servlet.session.persistent&#x3D;false # Whether to persist session data between restarts.
+server.servlet.session.store-dir&#x3D; # Directory used to store session data.
+server.servlet.session.timeout&#x3D;30m # Session timeout. If a duration suffix is not specified, seconds will be used.
+server.servlet.session.tracking-modes&#x3D; # Session tracking modes.
+server.ssl.ciphers&#x3D; # Supported SSL ciphers.
+server.ssl.client-auth&#x3D; # Client authentication mode.
+server.ssl.enabled&#x3D;true # Whether to enable SSL support.
+server.ssl.enabled-protocols&#x3D; # Enabled SSL protocols.
+server.ssl.key-alias&#x3D; # Alias that identifies the key in the key store.
+server.ssl.key-password&#x3D; # Password used to access the key in the key store.
+server.ssl.key-store&#x3D; # Path to the key store that holds the SSL certificate (typically a jks file).
+server.ssl.key-store-password&#x3D; # Password used to access the key store.
+server.ssl.key-store-provider&#x3D; # Provider for the key store.
+server.ssl.key-store-type&#x3D; # Type of the key store.
+server.ssl.protocol&#x3D;TLS # SSL protocol to use.
+server.ssl.trust-store&#x3D; # Trust store that holds SSL certificates.
+server.ssl.trust-store-password&#x3D; # Password used to access the trust store.
+server.ssl.trust-store-provider&#x3D; # Provider for the trust store.
+server.ssl.trust-store-type&#x3D; # Type of the trust store.
+server.tomcat.accept-count&#x3D;100 # Maximum queue length for incoming connection requests when all possible request processing threads are in use.
+server.tomcat.accesslog.buffered&#x3D;true # Whether to buffer output such that it is flushed only periodically.
+server.tomcat.accesslog.directory&#x3D;logs # Directory in which log files are created. Can be absolute or relative to the Tomcat base dir.
+server.tomcat.accesslog.enabled&#x3D;false # Enable access log.
+server.tomcat.accesslog.file-date-format&#x3D;.yyyy-MM-dd # Date format to place in the log file name.
+server.tomcat.accesslog.pattern&#x3D;common # Format pattern for access logs.
+server.tomcat.accesslog.prefix&#x3D;access_log # Log file name prefix.
+server.tomcat.accesslog.rename-on-rotate&#x3D;false # Whether to defer inclusion of the date stamp in the file name until rotate time.
+server.tomcat.accesslog.request-attributes-enabled&#x3D;false # Set request attributes for the IP address, Hostname, protocol, and port used for the request.
+server.tomcat.accesslog.rotate&#x3D;true # Whether to enable access log rotation.
+server.tomcat.accesslog.suffix&#x3D;.log # Log file name suffix.
+server.tomcat.additional-tld-skip-patterns&#x3D; # Comma-separated list of additional patterns that match jars to ignore for TLD scanning.
+server.tomcat.background-processor-delay&#x3D;10s # Delay between the invocation of backgroundProcess methods. If a duration suffix is not specified, seconds will be used.
+server.tomcat.basedir&#x3D; # Tomcat base directory. If not specified, a temporary directory is used.
+server.tomcat.internal-proxies&#x3D;10\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;|\\
+		192\\.168\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;|\\
+		169\\.254\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;|\\
+		127\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;|\\
+		172\\.1[6-9]&#123;1&#125;\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;|\\
+		172\\.2[0-9]&#123;1&#125;\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;|\\
+		172\\.3[0-1]&#123;1&#125;\\.\\d&#123;1,3&#125;\\.\\d&#123;1,3&#125;\\
+		0:0:0:0:0:0:0:1\\
+		::1 # Regular expression that matches proxies that are to be trusted.
+server.tomcat.max-connections&#x3D;10000 # Maximum number of connections that the server accepts and processes at any given time.
+server.tomcat.max-http-post-size&#x3D;2MB # Maximum size of the HTTP post content.
+server.tomcat.max-swallow-size&#x3D;2MB # Maximum amount of request body to swallow.
+server.tomcat.max-threads&#x3D;200 # Maximum amount of worker threads.
+server.tomcat.min-spare-threads&#x3D;10 # Minimum amount of worker threads.
+server.tomcat.port-header&#x3D;X-Forwarded-Port # Name of the HTTP header used to override the original port value.
+server.tomcat.protocol-header&#x3D; # Header that holds the incoming protocol, usually named &quot;X-Forwarded-Proto&quot;.
+server.tomcat.protocol-header-https-value&#x3D;https # Value of the protocol header indicating whether the incoming request uses SSL.
+server.tomcat.redirect-context-root&#x3D;true # Whether requests to the context root should be redirected by appending a &#x2F; to the path.
+server.tomcat.remote-ip-header&#x3D; # Name of the HTTP header from which the remote IP is extracted. For instance, &#96;X-FORWARDED-FOR&#96;.
+server.tomcat.resource.allow-caching&#x3D;true # Whether static resource caching is permitted for this web application.
+server.tomcat.resource.cache-ttl&#x3D; # Time-to-live of the static resource cache.
+server.tomcat.uri-encoding&#x3D;UTF-8 # Character encoding to use to decode the URI.
+server.tomcat.use-relative-redirects&#x3D; # Whether HTTP 1.1 and later location headers generated by a call to sendRedirect will use relative or absolute redirects.
+server.undertow.accesslog.dir&#x3D; # Undertow access log directory.
+server.undertow.accesslog.enabled&#x3D;false # Whether to enable the access log.
+server.undertow.accesslog.pattern&#x3D;common # Format pattern for access logs.
+server.undertow.accesslog.prefix&#x3D;access_log. # Log file name prefix.
+server.undertow.accesslog.rotate&#x3D;true # Whether to enable access log rotation.
+server.undertow.accesslog.suffix&#x3D;log # Log file name suffix.
+server.undertow.buffer-size&#x3D; # Size of each buffer.
+server.undertow.direct-buffers&#x3D; # Whether to allocate buffers outside the Java heap. The default is derived from the maximum amount of memory that is available to the JVM.
+server.undertow.eager-filter-init&#x3D;true # Whether servlet filters should be initialized on startup.
+server.undertow.io-threads&#x3D; # Number of I&#x2F;O threads to create for the worker. The default is derived from the number of available processors.
+server.undertow.max-http-post-size&#x3D;-1B # Maximum size of the HTTP post content. When the value is -1, the default, the size is unlimited.
+server.undertow.worker-threads&#x3D; # Number of worker threads. The default is 8 times the number of I&#x2F;O threads.
+ 
+# FREEMARKER (FreeMarkerProperties)
+spring.freemarker.allow-request-override&#x3D;false # Whether HttpServletRequest attributes are allowed to override (hide) controller generated model attributes of the same name.
+spring.freemarker.allow-session-override&#x3D;false # Whether HttpSession attributes are allowed to override (hide) controller generated model attributes of the same name.
+spring.freemarker.cache&#x3D;false # Whether to enable template caching.
+spring.freemarker.charset&#x3D;UTF-8 # Template encoding.
+spring.freemarker.check-template-location&#x3D;true # Whether to check that the templates location exists.
+spring.freemarker.content-type&#x3D;text&#x2F;html # Content-Type value.
+spring.freemarker.enabled&#x3D;true # Whether to enable MVC view resolution for this technology.
+spring.freemarker.expose-request-attributes&#x3D;false # Whether all request attributes should be added to the model prior to merging with the template.
+spring.freemarker.expose-session-attributes&#x3D;false # Whether all HttpSession attributes should be added to the model prior to merging with the template.
+spring.freemarker.expose-spring-macro-helpers&#x3D;true # Whether to expose a RequestContext for use by Spring&#39;s macro library, under the name &quot;springMacroRequestContext&quot;.
+spring.freemarker.prefer-file-system-access&#x3D;true # Whether to prefer file system access for template loading. File system access enables hot detection of template changes.
+spring.freemarker.prefix&#x3D; # Prefix that gets prepended to view names when building a URL.
+spring.freemarker.request-context-attribute&#x3D; # Name of the RequestContext attribute for all views.
+spring.freemarker.settings.*&#x3D; # Well-known FreeMarker keys which are passed to FreeMarker&#39;s Configuration.
+spring.freemarker.suffix&#x3D;.ftl # Suffix that gets appended to view names when building a URL.
+spring.freemarker.template-loader-path&#x3D;classpath:&#x2F;templates&#x2F; # Comma-separated list of template paths.
+spring.freemarker.view-names&#x3D; # White list of view names that can be resolved.
+ 
+# GROOVY TEMPLATES (GroovyTemplateProperties)
+spring.groovy.template.allow-request-override&#x3D;false # Whether HttpServletRequest attributes are allowed to override (hide) controller generated model attributes of the same name.
+spring.groovy.template.allow-session-override&#x3D;false # Whether HttpSession attributes are allowed to override (hide) controller generated model attributes of the same name.
+spring.groovy.template.cache&#x3D;false # Whether to enable template caching.
+spring.groovy.template.charset&#x3D;UTF-8 # Template encoding.
+spring.groovy.template.check-template-location&#x3D;true # Whether to check that the templates location exists.
+spring.groovy.template.configuration.*&#x3D; # See GroovyMarkupConfigurer
+spring.groovy.template.content-type&#x3D;text&#x2F;html # Content-Type value.
+spring.groovy.template.enabled&#x3D;true # Whether to enable MVC view resolution for this technology.
+spring.groovy.template.expose-request-attributes&#x3D;false # Whether all request attributes should be added to the model prior to merging with the template.
+spring.groovy.template.expose-session-attributes&#x3D;false # Whether all HttpSession attributes should be added to the model prior to merging with the template.
+spring.groovy.template.expose-spring-macro-helpers&#x3D;true # Whether to expose a RequestContext for use by Spring&#39;s macro library, under the name &quot;springMacroRequestContext&quot;.
+spring.groovy.template.prefix&#x3D; # Prefix that gets prepended to view names when building a URL.
+spring.groovy.template.request-context-attribute&#x3D; # Name of the RequestContext attribute for all views.
+spring.groovy.template.resource-loader-path&#x3D;classpath:&#x2F;templates&#x2F; # Template path.
+spring.groovy.template.suffix&#x3D;.tpl # Suffix that gets appended to view names when building a URL.
+spring.groovy.template.view-names&#x3D; # White list of view names that can be resolved.
+ 
+# SPRING HATEOAS (HateoasProperties)
+spring.hateoas.use-hal-as-default-json-media-type&#x3D;true # Whether application&#x2F;hal+json responses should be sent to requests that accept application&#x2F;json.
+ 
+# HTTP (HttpProperties)
+spring.http.converters.preferred-json-mapper&#x3D; # Preferred JSON mapper to use for HTTP message conversion. By default, auto-detected according to the environment.
+spring.http.encoding.charset&#x3D;UTF-8 # Charset of HTTP requests and responses. Added to the &quot;Content-Type&quot; header if not set explicitly.
+spring.http.encoding.enabled&#x3D;true # Whether to enable http encoding support.
+spring.http.encoding.force&#x3D; # Whether to force the encoding to the configured charset on HTTP requests and responses.
+spring.http.encoding.force-request&#x3D; # Whether to force the encoding to the configured charset on HTTP requests. Defaults to true when &quot;force&quot; has not been specified.
+spring.http.encoding.force-response&#x3D; # Whether to force the encoding to the configured charset on HTTP responses.
+spring.http.encoding.mapping&#x3D; # Locale in which to encode mapping.
+spring.http.log-request-details&#x3D;false # Whether logging of (potentially sensitive) request details at DEBUG and TRACE level is allowed.
+ 
+# MULTIPART (MultipartProperties)
+spring.servlet.multipart.enabled&#x3D;true # Whether to enable support of multipart uploads.
+spring.servlet.multipart.file-size-threshold&#x3D;0B # Threshold after which files are written to disk.
+spring.servlet.multipart.location&#x3D; # Intermediate location of uploaded files.
+spring.servlet.multipart.max-file-size&#x3D;1MB # Max file size.
+spring.servlet.multipart.max-request-size&#x3D;10MB # Max request size.
+spring.servlet.multipart.resolve-lazily&#x3D;false # Whether to resolve the multipart request lazily at the time of file or parameter access.
+ 
+# JACKSON (JacksonProperties)
+spring.jackson.date-format&#x3D; # Date format string or a fully-qualified date format class name. For instance, &#96;yyyy-MM-dd HH:mm:ss&#96;.
+spring.jackson.default-property-inclusion&#x3D; # Controls the inclusion of properties during serialization. Configured with one of the values in Jackson&#39;s JsonInclude.Include enumeration.
+spring.jackson.deserialization.*&#x3D; # Jackson on&#x2F;off features that affect the way Java objects are deserialized.
+spring.jackson.generator.*&#x3D; # Jackson on&#x2F;off features for generators.
+spring.jackson.joda-date-time-format&#x3D; # Joda date time format string. If not configured, &quot;date-format&quot; is used as a fallback if it is configured with a format string.
+spring.jackson.locale&#x3D; # Locale used for formatting.
+spring.jackson.mapper.*&#x3D; # Jackson general purpose on&#x2F;off features.
+spring.jackson.parser.*&#x3D; # Jackson on&#x2F;off features for parsers.
+spring.jackson.property-naming-strategy&#x3D; # One of the constants on Jackson&#39;s PropertyNamingStrategy. Can also be a fully-qualified class name of a PropertyNamingStrategy subclass.
+spring.jackson.serialization.*&#x3D; # Jackson on&#x2F;off features that affect the way Java objects are serialized.
+spring.jackson.time-zone&#x3D; #  Time zone used when formatting dates. For instance, &quot;America&#x2F;Los_Angeles&quot; or &quot;GMT+10&quot;.
+spring.jackson.visibility.*&#x3D; # Jackson visibility thresholds that can be used to limit which methods (and fields) are auto-detected.
+ 
+# GSON (GsonProperties)
+spring.gson.date-format&#x3D; # Format to use when serializing Date objects.
+spring.gson.disable-html-escaping&#x3D; # Whether to disable the escaping of HTML characters such as &#39;&lt;&#39;, &#39;&gt;&#39;, etc.
+spring.gson.disable-inner-class-serialization&#x3D; # Whether to exclude inner classes during serialization.
+spring.gson.enable-complex-map-key-serialization&#x3D; # Whether to enable serialization of complex map keys (i.e. non-primitives).
+spring.gson.exclude-fields-without-expose-annotation&#x3D; # Whether to exclude all fields from consideration for serialization or deserialization that do not have the &quot;Expose&quot; annotation.
+spring.gson.field-naming-policy&#x3D; # Naming policy that should be applied to an object&#39;s field during serialization and deserialization.
+spring.gson.generate-non-executable-json&#x3D; # Whether to generate non executable JSON by prefixing the output with some special text.
+spring.gson.lenient&#x3D; # Whether to be lenient about parsing JSON that doesn&#39;t conform to RFC 4627.
+spring.gson.long-serialization-policy&#x3D; # Serialization policy for Long and long types.
+spring.gson.pretty-printing&#x3D; # Whether to output serialized JSON that fits in a page for pretty printing.
+spring.gson.serialize-nulls&#x3D; # Whether to serialize null fields.
+ 
+# JERSEY (JerseyProperties)
+spring.jersey.application-path&#x3D; # Path that serves as the base URI for the application. If specified, overrides the value of &quot;@ApplicationPath&quot;.
+spring.jersey.filter.order&#x3D;0 # Jersey filter chain order.
+spring.jersey.init.*&#x3D; # Init parameters to pass to Jersey through the servlet or filter.
+spring.jersey.servlet.load-on-startup&#x3D;-1 # Load on startup priority of the Jersey servlet.
+spring.jersey.type&#x3D;servlet # Jersey integration type.
+ 
+# SPRING LDAP (LdapProperties)
+spring.ldap.anonymous-read-only&#x3D;false # Whether read-only operations should use an anonymous environment.
+spring.ldap.base&#x3D; # Base suffix from which all operations should originate.
+spring.ldap.base-environment.*&#x3D; # LDAP specification settings.
+spring.ldap.password&#x3D; # Login password of the server.
+spring.ldap.urls&#x3D; # LDAP URLs of the server.
+spring.ldap.username&#x3D; # Login username of the server.
+ 
+# EMBEDDED LDAP (EmbeddedLdapProperties)
+spring.ldap.embedded.base-dn&#x3D; # List of base DNs.
+spring.ldap.embedded.credential.username&#x3D; # Embedded LDAP username.
+spring.ldap.embedded.credential.password&#x3D; # Embedded LDAP password.
+spring.ldap.embedded.ldif&#x3D;classpath:schema.ldif # Schema (LDIF) script resource reference.
+spring.ldap.embedded.port&#x3D;0 # Embedded LDAP port.
+spring.ldap.embedded.validation.enabled&#x3D;true # Whether to enable LDAP schema validation.
+spring.ldap.embedded.validation.schema&#x3D; # Path to the custom schema.
+ 
+# MUSTACHE TEMPLATES (MustacheAutoConfiguration)
+spring.mustache.allow-request-override&#x3D;false # Whether HttpServletRequest attributes are allowed to override (hide) controller generated model attributes of the same name.
+spring.mustache.allow-session-override&#x3D;false # Whether HttpSession attributes are allowed to override (hide) controller generated model attributes of the same name.
+spring.mustache.cache&#x3D;false # Whether to enable template caching.
+spring.mustache.charset&#x3D;UTF-8 # Template encoding.
+spring.mustache.check-template-location&#x3D;true # Whether to check that the templates location exists.
+spring.mustache.content-type&#x3D;text&#x2F;html # Content-Type value.
+spring.mustache.enabled&#x3D;true # Whether to enable MVC view resolution for this technology.
+spring.mustache.expose-request-attributes&#x3D;false # Whether all request attributes should be added to the model prior to merging with the template.
+spring.mustache.expose-session-attributes&#x3D;false # Whether all HttpSession attributes should be added to the model prior to merging with the template.
+spring.mustache.expose-spring-macro-helpers&#x3D;true # Whether to expose a RequestContext for use by Spring&#39;s macro library, under the name &quot;springMacroRequestContext&quot;.
+spring.mustache.prefix&#x3D;classpath:&#x2F;templates&#x2F; # Prefix to apply to template names.
+spring.mustache.request-context-attribute&#x3D; # Name of the RequestContext attribute for all views.
+spring.mustache.suffix&#x3D;.mustache # Suffix to apply to template names.
+spring.mustache.view-names&#x3D; # White list of view names that can be resolved.
+ 
+# SPRING MVC (WebMvcProperties)
+spring.mvc.async.request-timeout&#x3D; # Amount of time before asynchronous request handling times out.
+spring.mvc.contentnegotiation.favor-parameter&#x3D;false # Whether a request parameter (&quot;format&quot; by default) should be used to determine the requested media type.
+spring.mvc.contentnegotiation.favor-path-extension&#x3D;false # Whether the path extension in the URL path should be used to determine the requested media type.
+spring.mvc.contentnegotiation.media-types.*&#x3D; # Map file extensions to media types for content negotiation. For instance, yml to text&#x2F;yaml.
+spring.mvc.contentnegotiation.parameter-name&#x3D; # Query parameter name to use when &quot;favor-parameter&quot; is enabled.
+spring.mvc.date-format&#x3D; # Date format to use. For instance, &#96;dd&#x2F;MM&#x2F;yyyy&#96;.
+spring.mvc.dispatch-trace-request&#x3D;false # Whether to dispatch TRACE requests to the FrameworkServlet doService method.
+spring.mvc.dispatch-options-request&#x3D;true # Whether to dispatch OPTIONS requests to the FrameworkServlet doService method.
+spring.mvc.favicon.enabled&#x3D;true # Whether to enable resolution of favicon.ico.
+spring.mvc.formcontent.filter.enabled&#x3D;true # Whether to enable Spring&#39;s FormContentFilter.
+spring.mvc.hiddenmethod.filter.enabled&#x3D;true # Whether to enable Spring&#39;s HiddenHttpMethodFilter.
+spring.mvc.ignore-default-model-on-redirect&#x3D;true # Whether the content of the &quot;default&quot; model should be ignored during redirect scenarios.
+spring.mvc.locale&#x3D; # Locale to use. By default, this locale is overridden by the &quot;Accept-Language&quot; header.
+spring.mvc.locale-resolver&#x3D;accept-header # Define how the locale should be resolved.
+spring.mvc.log-resolved-exception&#x3D;false # Whether to enable warn logging of exceptions resolved by a &quot;HandlerExceptionResolver&quot;, except for &quot;DefaultHandlerExceptionResolver&quot;.
+spring.mvc.message-codes-resolver-format&#x3D; # Formatting strategy for message codes. For instance, &#96;PREFIX_ERROR_CODE&#96;.
+spring.mvc.pathmatch.use-registered-suffix-pattern&#x3D;false # Whether suffix pattern matching should work only against extensions registered with &quot;spring.mvc.contentnegotiation.media-types.*&quot;.
+spring.mvc.pathmatch.use-suffix-pattern&#x3D;false # Whether to use suffix pattern match (&quot;.*&quot;) when matching patterns to requests.
+spring.mvc.servlet.load-on-startup&#x3D;-1 # Load on startup priority of the dispatcher servlet.
+spring.mvc.servlet.path&#x3D;&#x2F; # Path of the dispatcher servlet.
+spring.mvc.static-path-pattern&#x3D;&#x2F;** # Path pattern used for static resources.
+spring.mvc.throw-exception-if-no-handler-found&#x3D;false # Whether a &quot;NoHandlerFoundException&quot; should be thrown if no Handler was found to process a request.
+spring.mvc.view.prefix&#x3D; # Spring MVC view prefix.
+spring.mvc.view.suffix&#x3D; # Spring MVC view suffix.
+ 
+# SPRING RESOURCES HANDLING (ResourceProperties)
+spring.resources.add-mappings&#x3D;true # Whether to enable default resource handling.
+spring.resources.cache.cachecontrol.cache-private&#x3D; # Indicate that the response message is intended for a single user and must not be stored by a shared cache.
+spring.resources.cache.cachecontrol.cache-public&#x3D; # Indicate that any cache may store the response.
+spring.resources.cache.cachecontrol.max-age&#x3D; # Maximum time the response should be cached, in seconds if no duration suffix is not specified.
+spring.resources.cache.cachecontrol.must-revalidate&#x3D; # Indicate that once it has become stale, a cache must not use the response without re-validating it with the server.
+spring.resources.cache.cachecontrol.no-cache&#x3D; # Indicate that the cached response can be reused only if re-validated with the server.
+spring.resources.cache.cachecontrol.no-store&#x3D; # Indicate to not cache the response in any case.
+spring.resources.cache.cachecontrol.no-transform&#x3D; # Indicate intermediaries (caches and others) that they should not transform the response content.
+spring.resources.cache.cachecontrol.proxy-revalidate&#x3D; # Same meaning as the &quot;must-revalidate&quot; directive, except that it does not apply to private caches.
+spring.resources.cache.cachecontrol.s-max-age&#x3D; # Maximum time the response should be cached by shared caches, in seconds if no duration suffix is not specified.
+spring.resources.cache.cachecontrol.stale-if-error&#x3D; # Maximum time the response may be used when errors are encountered, in seconds if no duration suffix is not specified.
+spring.resources.cache.cachecontrol.stale-while-revalidate&#x3D; # Maximum time the response can be served after it becomes stale, in seconds if no duration suffix is not specified.
+spring.resources.cache.period&#x3D; # Cache period for the resources served by the resource handler. If a duration suffix is not specified, seconds will be used.
+spring.resources.chain.cache&#x3D;true # Whether to enable caching in the Resource chain.
+spring.resources.chain.compressed&#x3D;false # Whether to enable resolution of already compressed resources (gzip, brotli).
+spring.resources.chain.enabled&#x3D; # Whether to enable the Spring Resource Handling chain. By default, disabled unless at least one strategy has been enabled.
+spring.resources.chain.html-application-cache&#x3D;false # Whether to enable HTML5 application cache manifest rewriting.
+spring.resources.chain.strategy.content.enabled&#x3D;false # Whether to enable the content Version Strategy.
+spring.resources.chain.strategy.content.paths&#x3D;&#x2F;** # Comma-separated list of patterns to apply to the content Version Strategy.
+spring.resources.chain.strategy.fixed.enabled&#x3D;false # Whether to enable the fixed Version Strategy.
+spring.resources.chain.strategy.fixed.paths&#x3D;&#x2F;** # Comma-separated list of patterns to apply to the fixed Version Strategy.
+spring.resources.chain.strategy.fixed.version&#x3D; # Version string to use for the fixed Version Strategy.
+spring.resources.static-locations&#x3D;classpath:&#x2F;META-INF&#x2F;resources&#x2F;,classpath:&#x2F;resources&#x2F;,classpath:&#x2F;static&#x2F;,classpath:&#x2F;public&#x2F; # Locations of static resources.
+ 
+# SPRING SESSION (SessionProperties)
+spring.session.store-type&#x3D; # Session store type.
+spring.session.timeout&#x3D; # Session timeout. If a duration suffix is not specified, seconds will be used.
+spring.session.servlet.filter-order&#x3D;-2147483598 # Session repository filter order.
+spring.session.servlet.filter-dispatcher-types&#x3D;async,error,request # Session repository filter dispatcher types.
+ 
+# SPRING SESSION HAZELCAST (HazelcastSessionProperties)
+spring.session.hazelcast.flush-mode&#x3D;on-save # Sessions flush mode.
+spring.session.hazelcast.map-name&#x3D;spring:session:sessions # Name of the map used to store sessions.
+ 
+# SPRING SESSION JDBC (JdbcSessionProperties)
+spring.session.jdbc.cleanup-cron&#x3D;0 * * * * * # Cron expression for expired session cleanup job.
+spring.session.jdbc.initialize-schema&#x3D;embedded # Database schema initialization mode.
+spring.session.jdbc.schema&#x3D;classpath:org&#x2F;springframework&#x2F;session&#x2F;jdbc&#x2F;schema-@@platform@@.sql # Path to the SQL file to use to initialize the database schema.
+spring.session.jdbc.table-name&#x3D;SPRING_SESSION # Name of the database table used to store sessions.
+ 
+# SPRING SESSION MONGODB (MongoSessionProperties)
+spring.session.mongodb.collection-name&#x3D;sessions # Collection name used to store sessions.
+ 
+# SPRING SESSION REDIS (RedisSessionProperties)
+spring.session.redis.cleanup-cron&#x3D;0 * * * * * # Cron expression for expired session cleanup job.
+spring.session.redis.flush-mode&#x3D;on-save # Sessions flush mode.
+spring.session.redis.namespace&#x3D;spring:session # Namespace for keys used to store sessions.
+ 
+# THYMELEAF (ThymeleafAutoConfiguration)
+spring.thymeleaf.cache&#x3D;true # Whether to enable template caching.
+spring.thymeleaf.check-template&#x3D;true # Whether to check that the template exists before rendering it.
+spring.thymeleaf.check-template-location&#x3D;true # Whether to check that the templates location exists.
+spring.thymeleaf.enabled&#x3D;true # Whether to enable Thymeleaf view resolution for Web frameworks.
+spring.thymeleaf.enable-spring-el-compiler&#x3D;false # Enable the SpringEL compiler in SpringEL expressions.
+spring.thymeleaf.encoding&#x3D;UTF-8 # Template files encoding.
+spring.thymeleaf.excluded-view-names&#x3D; # Comma-separated list of view names (patterns allowed) that should be excluded from resolution.
+spring.thymeleaf.mode&#x3D;HTML # Template mode to be applied to templates. See also Thymeleaf&#39;s TemplateMode enum.
+spring.thymeleaf.prefix&#x3D;classpath:&#x2F;templates&#x2F; # Prefix that gets prepended to view names when building a URL.
+spring.thymeleaf.reactive.chunked-mode-view-names&#x3D; # Comma-separated list of view names (patterns allowed) that should be the only ones executed in CHUNKED mode when a max chunk size is set.
+spring.thymeleaf.reactive.full-mode-view-names&#x3D; # Comma-separated list of view names (patterns allowed) that should be executed in FULL mode even if a max chunk size is set.
+spring.thymeleaf.reactive.max-chunk-size&#x3D;0B # Maximum size of data buffers used for writing to the response.
+spring.thymeleaf.reactive.media-types&#x3D; # Media types supported by the view technology.
+spring.thymeleaf.render-hidden-markers-before-checkboxes&#x3D;false # Whether hidden form inputs acting as markers for checkboxes should be rendered before the checkbox element itself.
+spring.thymeleaf.servlet.content-type&#x3D;text&#x2F;html # Content-Type value written to HTTP responses.
+spring.thymeleaf.servlet.produce-partial-output-while-processing&#x3D;true # Whether Thymeleaf should start writing partial output as soon as possible or buffer until template processing is finished.
+spring.thymeleaf.suffix&#x3D;.html # Suffix that gets appended to view names when building a URL.
+spring.thymeleaf.template-resolver-order&#x3D; # Order of the template resolver in the chain.
+spring.thymeleaf.view-names&#x3D; # Comma-separated list of view names (patterns allowed) that can be resolved.
+ 
+# SPRING WEBFLUX (WebFluxProperties)
+spring.webflux.date-format&#x3D; # Date format to use. For instance, &#96;dd&#x2F;MM&#x2F;yyyy&#96;.
+spring.webflux.hiddenmethod.filter.enabled&#x3D;true # Whether to enable Spring&#39;s HiddenHttpMethodFilter.
+spring.webflux.static-path-pattern&#x3D;&#x2F;** # Path pattern used for static resources.
+ 
+# SPRING WEB SERVICES (WebServicesProperties)
+spring.webservices.path&#x3D;&#x2F;services # Path that serves as the base URI for the services.
+spring.webservices.servlet.init&#x3D; # Servlet init parameters to pass to Spring Web Services.
+spring.webservices.servlet.load-on-startup&#x3D;-1 # Load on startup priority of the Spring Web Services servlet.
+spring.webservices.wsdl-locations&#x3D; # Comma-separated list of locations of WSDLs and accompanying XSDs to be exposed as beans.
+ 
+ 
+# ----------------------------------------
+# SECURITY PROPERTIES
+# ----------------------------------------
+# SECURITY (SecurityProperties)
+spring.security.filter.order&#x3D;-100 # Security filter chain order.
+spring.security.filter.dispatcher-types&#x3D;async,error,request # Security filter chain dispatcher types.
+spring.security.user.name&#x3D;user # Default user name.
+spring.security.user.password&#x3D; # Password for the default user name.
+spring.security.user.roles&#x3D; # Granted roles for the default user name.
+ 
+# SECURITY OAUTH2 CLIENT (OAuth2ClientProperties)
+spring.security.oauth2.client.provider.*&#x3D; # OAuth provider details.
+spring.security.oauth2.client.registration.*&#x3D; # OAuth client registrations.
+ 
+# SECURITY OAUTH2 RESOURCE SERVER (OAuth2ResourceServerProperties)
+spring.security.oauth2.resourceserver.jwt.jwk-set-uri&#x3D; # JSON Web Key URI to use to verify the JWT token.
+   spring.security.oauth2.resourceserver.jwt.issuer-uri&#x3D; # URI that an OpenID Connect Provider asserts as its Issuer Identifier.
+ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">CrissMagic</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://www.crissmagic.cn/articles/2019/10/21/1571628649893.html">https://www.crissmagic.cn/articles/2019/10/21/1571628649893.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">CrissMagic</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                                    <span class="chip bg-color">后端</span>
+                                </a>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">觉得不错的话可以请作者喝可乐</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.JPG" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.JPG" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/articles/2019/10/21/1571628717779.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Application.properties全配置（下）">
+                        
+                        <span class="card-title">Application.properties全配置（下）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-21
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    后端技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                        <span class="chip bg-color">后端</span>
+                    </a>
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/articles/2019/10/17/1571305607364.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="高并发下的部分架构解决思路">
+                        
+                        <span class="card-title">高并发下的部分架构解决思路</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    后端技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/">
+                        <span class="chip bg-color">高并发</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9E%B6%E6%9E%84/">
+                        <span class="chip bg-color">架构</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">CrissMagic</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">55k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2019";
+                        var startMonth = "10";
+                        var startDate = "3";
+                        var startHour = "9";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn" target="_blank">渝ICP备19014189号-1</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/CrissMagic" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:whncriss@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

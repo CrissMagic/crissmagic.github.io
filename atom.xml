@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一人行者</title>
+  
+  <subtitle>知命不惧，日日自新</subtitle>
+  <link href="https://www.crissmagic.cn/atom.xml" rel="self"/>
+  
+  <link href="https://www.crissmagic.cn/"/>
+  <updated>2022-03-01T02:30:28.754Z</updated>
+  <id>https://www.crissmagic.cn/</id>
+  
+  <author>
+    <name>CrissMagic</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pulsar Debezium CDC同步经验</title>
+    <link href="https://www.crissmagic.cn/2022/03/01/debezium-shi-yong-jing-yan/"/>
+    <id>https://www.crissmagic.cn/2022/03/01/debezium-shi-yong-jing-yan/</id>
+    <published>2022-03-01T02:08:52.000Z</published>
+    <updated>2022-03-01T02:30:28.754Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Pulsar-Debezium-CDC同步经验&quot;&gt;&lt;a href=&quot;#Pulsar-Debezium-CDC同步经验&quot; class=&quot;headerlink&quot; title=&quot;Pulsar Debezium CDC同步经验&quot;&gt;&lt;/a&gt;Pulsar Debezium</summary>
+        
+      
+    
+    
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/categories/Pulsar/"/>
+    
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+    <category term="Debezium" scheme="https://www.crissmagic.cn/tags/Debezium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pulsar Debezium同步PgSQL数据</title>
+    <link href="https://www.crissmagic.cn/2022/02/28/pulsar-debezium-lian-jie-pgsql/"/>
+    <id>https://www.crissmagic.cn/2022/02/28/pulsar-debezium-lian-jie-pgsql/</id>
+    <published>2022-02-28T09:08:52.000Z</published>
+    <updated>2022-02-28T10:17:16.439Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Pulsar-Debezium同步PgSQL数据&quot;&gt;&lt;a href=&quot;#Pulsar-Debezium同步PgSQL数据&quot; class=&quot;headerlink&quot; title=&quot;Pulsar Debezium同步PgSQL数据&quot;&gt;&lt;/a&gt;Pulsar</summary>
+        
+      
+    
+    
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/categories/Pulsar/"/>
+    
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+    <category term="Debezium" scheme="https://www.crissmagic.cn/tags/Debezium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7安装使用htop</title>
+    <link href="https://www.crissmagic.cn/2021/07/08/centos7-an-zhuang-shi-yong-htop/"/>
+    <id>https://www.crissmagic.cn/2021/07/08/centos7-an-zhuang-shi-yong-htop/</id>
+    <published>2021-07-08T03:00:31.000Z</published>
+    <updated>2021-07-08T03:26:23.694Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CentOS7安装使用htop&quot;&gt;&lt;a href=&quot;#CentOS7安装使用htop&quot; class=&quot;headerlink&quot; title=&quot;CentOS7安装使用htop&quot;&gt;&lt;/a&gt;CentOS7安装使用htop&lt;/h1&gt;&lt;p&gt;转载于原文:&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="linux" scheme="https://www.crissmagic.cn/tags/linux/"/>
+    
+    <category term="htop" scheme="https://www.crissmagic.cn/tags/htop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala学习-模板模式Demo</title>
+    <link href="https://www.crissmagic.cn/2021/07/05/scala-xue-xi-mo-ban-mo-shi-demo/"/>
+    <id>https://www.crissmagic.cn/2021/07/05/scala-xue-xi-mo-ban-mo-shi-demo/</id>
+    <published>2021-07-05T01:08:52.000Z</published>
+    <updated>2021-07-08T03:26:34.484Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;模版模式通常用于一个固定的顺序执行方法中只有几个方法并不能确定，需要子类进行实现。例如计算一个方法的执行时间，第一步为获取当前时间毫秒值，第二步为执行方法，第三步为获取当前时间毫秒值并取差值得出结论，其中第二步应为抽象方法&lt;/p&gt;
+&lt;/blockq</summary>
+        
+      
+    
+    
+    
+    <category term="Scala" scheme="https://www.crissmagic.cn/categories/Scala/"/>
+    
+    <category term="设计模式" scheme="https://www.crissmagic.cn/categories/Scala/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="Scala" scheme="https://www.crissmagic.cn/tags/Scala/"/>
+    
+    <category term="设计模式" scheme="https://www.crissmagic.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala学习-职责链模式Demo</title>
+    <link href="https://www.crissmagic.cn/2021/07/05/scala-xue-xi-zhi-ze-lian-mo-shi-demo/"/>
+    <id>https://www.crissmagic.cn/2021/07/05/scala-xue-xi-zhi-ze-lian-mo-shi-demo/</id>
+    <published>2021-07-05T01:08:52.000Z</published>
+    <updated>2021-07-08T03:27:17.906Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;职责链模式通常用于一个依次调用的方法场景，换成代码来说就是一个类继承了多个trait后，可以依次调用多个trait中的同一个方法，只要让多个trait中的同一个方法在最后都依次执行super关键字即可。类中调用多个tait中都有这个方法时，首先会从</summary>
+        
+      
+    
+    
+    
+    <category term="Scala" scheme="https://www.crissmagic.cn/categories/Scala/"/>
+    
+    <category term="设计模式" scheme="https://www.crissmagic.cn/categories/Scala/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="Scala" scheme="https://www.crissmagic.cn/tags/Scala/"/>
+    
+    <category term="设计模式" scheme="https://www.crissmagic.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala学习-适配器模式Demo</title>
+    <link href="https://www.crissmagic.cn/2021/07/05/scala-xue-xi-gua-pei-qi-mo-shi-demo/"/>
+    <id>https://www.crissmagic.cn/2021/07/05/scala-xue-xi-gua-pei-qi-mo-shi-demo/</id>
+    <published>2021-07-05T01:08:52.000Z</published>
+    <updated>2021-07-08T03:26:43.572Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;适配器模式通常用于一个类想实现一个接口但是这个接口有比较多的抽象方法，需求只需要实现其中几个，此时可以使用，用一个抽象类（适配器类）来空实现，具体的业务实现再继承抽象类重写需要的方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="Scala" scheme="https://www.crissmagic.cn/categories/Scala/"/>
+    
+    <category term="设计模式" scheme="https://www.crissmagic.cn/categories/Scala/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="Scala" scheme="https://www.crissmagic.cn/tags/Scala/"/>
+    
+    <category term="设计模式" scheme="https://www.crissmagic.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pulsar性能测试</title>
+    <link href="https://www.crissmagic.cn/2021/06/07/pulsar-xing-neng-ce-shi/"/>
+    <id>https://www.crissmagic.cn/2021/06/07/pulsar-xing-neng-ce-shi/</id>
+    <published>2021-06-07T09:56:00.000Z</published>
+    <updated>2021-07-08T03:26:06.437Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Pulsar性能测试&quot;&gt;&lt;a href=&quot;#Pulsar性能测试&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="消息队列" scheme="https://www.crissmagic.cn/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装Pulsar Manager</title>
+    <link href="https://www.crissmagic.cn/2021/05/24/an-zhuang-pulsar-manager/"/>
+    <id>https://www.crissmagic.cn/2021/05/24/an-zhuang-pulsar-manager/</id>
+    <published>2021-05-24T08:16:16.000Z</published>
+    <updated>2021-06-07T10:01:16.702Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安装Pulsar-Manager&quot;&gt;&lt;a href=&quot;#安装Pulsar-Manager&quot; class=&quot;headerlink&quot; title=&quot;安装Pulsar Manager&quot;&gt;&lt;/a&gt;安装Pulsar Manager&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="消息队列" scheme="https://www.crissmagic.cn/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pulsar Debezium常用命令与常见问题</title>
+    <link href="https://www.crissmagic.cn/2021/05/14/pulsar-debezium-chang-yong-ming-ling-yu-chang-jian-wen-ti/"/>
+    <id>https://www.crissmagic.cn/2021/05/14/pulsar-debezium-chang-yong-ming-ling-yu-chang-jian-wen-ti/</id>
+    <published>2021-05-14T08:16:20.000Z</published>
+    <updated>2021-06-07T10:02:11.573Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;source常用命令&quot;&gt;&lt;a href=&quot;#source常用命令&quot; class=&quot;headerlink&quot; title=&quot;source常用命令&quot;&gt;&lt;/a&gt;source常用命令&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-linux&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="消息队列" scheme="https://www.crissmagic.cn/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+    <category term="Debezium" scheme="https://www.crissmagic.cn/tags/Debezium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pulsar Debezium同步MySQL数据</title>
+    <link href="https://www.crissmagic.cn/2021/05/14/pulsar-debezium-lian-jie-mysql/"/>
+    <id>https://www.crissmagic.cn/2021/05/14/pulsar-debezium-lian-jie-mysql/</id>
+    <published>2021-05-14T01:16:20.000Z</published>
+    <updated>2021-06-07T10:01:50.166Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Pulsar-Debezium同步MySQL数据&quot;&gt;&lt;a href=&quot;#Pulsar-Debezium同步MySQL数据&quot; class=&quot;headerlink&quot; title=&quot;Pulsar Debezium同步MySQL数据&quot;&gt;&lt;/a&gt;Pulsar</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="消息队列" scheme="https://www.crissmagic.cn/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+    <category term="Debezium" scheme="https://www.crissmagic.cn/tags/Debezium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单节点Pulsar部署</title>
+    <link href="https://www.crissmagic.cn/2021/05/08/dan-jie-dian-an-zhuang-yun-xing-pulsar/"/>
+    <id>https://www.crissmagic.cn/2021/05/08/dan-jie-dian-an-zhuang-yun-xing-pulsar/</id>
+    <published>2021-05-08T08:16:20.000Z</published>
+    <updated>2021-06-07T10:01:35.807Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;单节点Pulsar部署&quot;&gt;&lt;a href=&quot;#单节点Pulsar部署&quot; class=&quot;headerlink&quot; title=&quot;单节点Pulsar部署&quot;&gt;&lt;/a&gt;单节点Pulsar部署&lt;/h1&gt;&lt;p&gt;官方文档参考：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="消息队列" scheme="https://www.crissmagic.cn/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设置租户、角色、命名空间</title>
+    <link href="https://www.crissmagic.cn/2021/05/08/she-zhi-zu-hu-jiao-se-ming-ming-kong-jian/"/>
+    <id>https://www.crissmagic.cn/2021/05/08/she-zhi-zu-hu-jiao-se-ming-ming-kong-jian/</id>
+    <published>2021-05-08T02:30:31.000Z</published>
+    <updated>2021-07-08T03:25:52.133Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;租户&quot;&gt;&lt;a href=&quot;#租户&quot; class=&quot;headerlink&quot; title=&quot;租户&quot;&gt;&lt;/a&gt;租户&lt;/h2&gt;&lt;p&gt;目前可对以下两方面进行配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin角色&lt;/li&gt;
+&lt;li&gt;允许的集群&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="消息队列" scheme="https://www.crissmagic.cn/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+    <category term="Pulsar" scheme="https://www.crissmagic.cn/tags/Pulsar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows和Linux后台Jar包启动方式记录</title>
+    <link href="https://www.crissmagic.cn/articles/2020/10/15/1602757520896.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/10/15/1602757520896.html</id>
+    <published>2020-10-15T10:25:20.000Z</published>
+    <updated>2020-10-26T03:42:11.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://b3logfile.com/bing/20191217.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;windows和Linux后台Jar包启动方式记录&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="后端" scheme="https://www.crissmagic.cn/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="Java" scheme="https://www.crissmagic.cn/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue标签拖拽实现与部分踩坑记录</title>
+    <link href="https://www.crissmagic.cn/articles/2020/07/30/1596097184978.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/07/30/1596097184978.html</id>
+    <published>2020-07-30T08:19:45.000Z</published>
+    <updated>2020-07-30T08:59:26.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.hacpai.com/bing/20191222.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Vue-标签拖拽实现与部分踩坑记录&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="问题记录" scheme="https://www.crissmagic.cn/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="前端" scheme="https://www.crissmagic.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="https://www.crissmagic.cn/tags/Vue/"/>
+    
+    <category term="Element-UI" scheme="https://www.crissmagic.cn/tags/Element-UI/"/>
+    
+    <category term="Echarts" scheme="https://www.crissmagic.cn/tags/Echarts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7 下 Docker 相关操作</title>
+    <link href="https://www.crissmagic.cn/articles/2020/06/24/1592966579861.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/06/24/1592966579861.html</id>
+    <published>2020-06-24T02:42:59.000Z</published>
+    <updated>2020-06-24T02:42:59.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.hacpai.com/bing/20191104.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;CentOS7下Docker相关操作&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="Linux" scheme="https://www.crissmagic.cn/tags/Linux/"/>
+    
+    <category term="Docker" scheme="https://www.crissmagic.cn/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ElementUI表格表头高度设置问题</title>
+    <link href="https://www.crissmagic.cn/articles/2020/06/16/1592303153618.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/06/16/1592303153618.html</id>
+    <published>2020-06-16T10:25:53.000Z</published>
+    <updated>2020-06-16T10:25:53.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.hacpai.com/bing/20180328.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;ElementUI表格表头高度设置问题&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="问题记录" scheme="https://www.crissmagic.cn/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="问题解决" scheme="https://www.crissmagic.cn/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    <category term="前端" scheme="https://www.crissmagic.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iPad pro + 妙控键盘简单使用测评</title>
+    <link href="https://www.crissmagic.cn/articles/2020/06/12/1591949845775.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/06/12/1591949845775.html</id>
+    <published>2020-06-12T08:17:25.000Z</published>
+    <updated>2020-06-12T08:17:25.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.hacpai.com/bing/20190114.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;iPad-pro-妙控键盘简单使用测评&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="生活分享" scheme="https://www.crissmagic.cn/categories/%E7%94%9F%E6%B4%BB%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="简评" scheme="https://www.crissmagic.cn/tags/%E7%AE%80%E8%AF%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL相关学习与优化（持续更新）</title>
+    <link href="https://www.crissmagic.cn/articles/2020/06/05/1591324820534.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/06/05/1591324820534.html</id>
+    <published>2020-06-05T02:40:20.000Z</published>
+    <updated>2020-06-05T02:40:20.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.hacpai.com/bing/20191122.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1、or-与-UNION&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端技术" scheme="https://www.crissmagic.cn/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="SQL" scheme="https://www.crissmagic.cn/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员专用知识类网站推荐（持续更新）</title>
+    <link href="https://www.crissmagic.cn/articles/2020/06/04/1591237014985.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/06/04/1591237014985.html</id>
+    <published>2020-06-04T02:16:55.000Z</published>
+    <updated>2020-06-04T02:16:55.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.hacpai.com/bing/20181009.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;程序员专用知识类网站推荐（持续更新）&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="知识分享" scheme="https://www.crissmagic.cn/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Java" scheme="https://www.crissmagic.cn/tags/Java/"/>
+    
+    <category term="网站推荐" scheme="https://www.crissmagic.cn/tags/%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7部署Sonarqube6.7.4</title>
+    <link href="https://www.crissmagic.cn/articles/2020/05/26/1590487196412.html"/>
+    <id>https://www.crissmagic.cn/articles/2020/05/26/1590487196412.html</id>
+    <published>2020-05-26T09:59:56.000Z</published>
+    <updated>2020-06-03T03:10:02.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.hacpai.com/bing/20200512.jpg?imageView2/1/w/960/h/540/interlace/1/q/100&quot;&gt;&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="软件部署" scheme="https://www.crissmagic.cn/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="Linux" scheme="https://www.crissmagic.cn/tags/Linux/"/>
+    
+    <category term="Java" scheme="https://www.crissmagic.cn/tags/Java/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,1405 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="CentOS7搭建CDH5.16.2, 一人行者">
+    <meta name="description" content="CrissMagicBlog">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>CentOS7搭建CDH5.16.2 | 一人行者</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="一人行者" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一人行者</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一人行者</div>
+        <div class="logo-desc">
+            
+            CrissMagicBlog
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">CentOS7搭建CDH5.16.2</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/CDH/">
+                                <span class="chip bg-color">CDH</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">
+                                <span class="chip bg-color">大数据</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/" class="post-category">
+                                软件部署
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-11-08
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    10 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p><img src="https://img.hacpai.com/bing/20190228.jpg?imageView2/1/w/960/h/540/interlace/1/q/100"></p>
+<h1 id="CentOS7-搭建-CDH5-16-2"><a href="#CentOS7-搭建-CDH5-16-2" class="headerlink" title="CentOS7 搭建 CDH5.16.2"></a>CentOS7 搭建 CDH5.16.2</h1><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>很久之前就想在虚拟机上通过 CDH 搭建大数据集群，但是因为种种原因，还有网上博客的各种坑，一直到最近才安装成功，这里分享一下我自己整理后的安装步骤。自己主要在虚拟机 VMWare 上进行安装，但是参考的博客是在 ECS 上安装的，所以都可以进行参考。这里附上本文所用的软件链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1sQzZ7BMZhqtPPETfTHXmvw">nlyn</a></p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/chenhai201/article/details/78856007">参考博客</a>。需要注意的是，按照<a target="_blank" rel="noopener" href="https://blog.csdn.net/chenhai201/article/details/78856007">该博客</a>安装 5.14.1 会导致在安装 CM 时卡在 40%的地方，根据文章下方的评论，建议直接安装最新版 cdh，故此处安装 CDH5.16.2</p>
+</blockquote>
+<h2 id="一、虚拟机配置与-CentOS7-环境安装"><a href="#一、虚拟机配置与-CentOS7-环境安装" class="headerlink" title="一、虚拟机配置与 CentOS7 环境安装"></a>一、虚拟机配置与 CentOS7 环境安装</h2><p>自身配置时注意更换 hostname</p>
+<h3 id="个人虚拟机配置："><a href="#个人虚拟机配置：" class="headerlink" title="个人虚拟机配置："></a>个人虚拟机配置：</h3><pre class="line-numbers language-none"><code class="language-none">master 192.168.211.128 2*1核 5G+30G
+slave1 192.168.211.129 1*1核 1G+20G
+slave2 192.168.211.130 1*1核 1G+20G
+slave3 192.168.211.131 1*1核 1G+20G
+
+个人安装的版本为CentOS-7-x86_64-DVD-1908，安装时均选择最小安装。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>需要注意的是，后期在 Web 页面会进行集群安装，这个时候需要密码登录或者私钥登录所有节点，故此处采用密码登录，<strong>所有节点配置了相同的 root 密码</strong></p>
+</blockquote>
+<h3 id="最小安装后的联网设置以及-yum-更新"><a href="#最小安装后的联网设置以及-yum-更新" class="headerlink" title="最小安装后的联网设置以及 yum 更新"></a>最小安装后的联网设置以及 yum 更新</h3><pre class="line-numbers language-none"><code class="language-none"># 所有节点均要配置
+# 配置ifcfg-ens33，若配置不叫ens33可换为对应的名字
+$ vi &#x2F;etc&#x2F;sysconfig&#x2F;network-script&#x2F;ifcfg-ens33
+
+TYPE&#x3D;&quot;Ethernet&quot;
+PROXY_METHOD&#x3D;&quot;none&quot;
+BROWSER_ONLY&#x3D;&quot;no&quot;
+BOOTPROTO&#x3D;&quot;static&quot; # 改为静态ip
+DEFROUTE&#x3D;&quot;yes&quot;
+IPV4_FAILURE_FATAL&#x3D;&quot;no&quot;
+IPV6INIT&#x3D;&quot;yes&quot;
+IPV6_AUTOCONF&#x3D;&quot;yes&quot;
+IPV6_DEFROUTE&#x3D;&quot;yes&quot;
+IPV6_FAILURE_FATAL&#x3D;&quot;no&quot;
+IPV6_ADDR_GEN_MODE&#x3D;&quot;stable-privacy&quot;
+NAME&#x3D;&quot;ens33&quot;
+UUID&#x3D;&quot;c29990a8-f310-46b8-bf73-1e31e92ec3af&quot;
+DEVICE&#x3D;&quot;ens33&quot;
+ONBOOT&#x3D;&quot;yes&quot; # 改为开机启动
+IPADDR&#x3D;192.168.211.128 # 修改对应ip地址
+NETMASK&#x3D;255.255.255.0 # 修改子网掩码
+GATEWAY&#x3D;192.168.211.2 # 修改网关与虚拟机网络配置中的网关相同
+DNS1&#x3D;8.8.8.8 # 添加DNS
+DNS2&#x3D;114.114.114.114
+
+# 重启网络
+$ systemctl restart network
+
+# ping外网
+$ ping www.baidu.com
+
+# yum更新（可更换yum源）
+$ yum update
+
+# 安装wget
+$ yum install -y wget
+
+# 安装net-tools
+$ yum install -y net-tools
+
+# 安装vim
+$ yum install -y vim<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="配置基本环境"><a href="#配置基本环境" class="headerlink" title="配置基本环境"></a>配置基本环境</h3><h4 id="最小安装不带-OpenJDK，此处省略卸载步骤，采用-rpm-本地安装-jdk8"><a href="#最小安装不带-OpenJDK，此处省略卸载步骤，采用-rpm-本地安装-jdk8" class="headerlink" title="最小安装不带 OpenJDK，此处省略卸载步骤，采用 rpm 本地安装 jdk8"></a>最小安装不带 OpenJDK，此处省略卸载步骤，采用 rpm 本地安装 jdk8</h4><pre class="line-numbers language-none"><code class="language-none"># 所有节点均要配置
+# 上传jdk安装包与Oracle依赖
+# rpm本地安装
+rpm -ivh jdk-8u65-linux-x64.rpm
+rpm -ivh oracle-j2sdk1.7-1.7.0+update67-1.x86_64.rpm #CM安装需要这个，否则会重新联网下载，造成安装速度非常缓慢
+
+# rpm安装会自动配置环境变量，采用其他方式安装需配置环境变量，此处省略
+
+# 检查jdk安装情况
+$ java -version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="设置-hosts-与-SSH"><a href="#设置-hosts-与-SSH" class="headerlink" title="设置 hosts 与 SSH"></a>设置 hosts 与 SSH</h4><pre class="line-numbers language-none"><code class="language-none"># 所有节点修改hostname
+$ hostnamectl --static set-hostname master
+
+# 所有节点修改hosts
+$ vim &#x2F;etc&#x2F;hosts
+
+# 在文件后追加
+192.168.211.128 master
+192.168.211.129 slave1
+192.168.211.130 slave2
+192.168.211.131 slave3
+
+# 关闭防火墙
+$ systemctl stop firewalld.service #停止firewall
+$ systemctl disable firewalld.service #禁止firewall开机启动
+$ firewall-cmd --state #查看默认防火墙状态（关闭后显示not running，开启后显示running）
+
+# 关闭selinux：
+vim &#x2F;etc&#x2F;selinux&#x2F;config
+
+# 找到SELINUX改为：
+SELINUX&#x3D;disabled
+
+# 设置ssh
+# 先在master上执行：
+$ ssh-keygen -t rsa   #一路回车到完成
+$ ssh-copy-id -i ~&#x2F;.ssh&#x2F;id_rsa.pub root@master   #将公钥拷贝到本机的authorized_keys上
+
+# 再在其他节点分别执行以下命令：
+$ ssh-keygen -t rsa   #一路回车到完成
+$ ssh-copy-id -i ~&#x2F;.ssh&#x2F;id_rsa.pub root@master   #注意此处不变，将公钥拷贝到master的authorized_keys上
+
+# 在master上，将authorized_keys分发到其他节点服务器：
+$ scp ~&#x2F;.ssh&#x2F;authorized_keys root@serve1:~&#x2F;.ssh&#x2F;
+$ scp ~&#x2F;.ssh&#x2F;authorized_keys root@serve2:~&#x2F;.ssh&#x2F;
+$ scp ~&#x2F;.ssh&#x2F;authorized_keys root@serve3:~&#x2F;.ssh&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="重启所有节点服务器"><a href="#重启所有节点服务器" class="headerlink" title="重启所有节点服务器"></a>重启所有节点服务器</h4><pre class="line-numbers language-none"><code class="language-none"># 重启服务器使配置生效
+$ reboot<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="安装-ntp-时间同步软件"><a href="#安装-ntp-时间同步软件" class="headerlink" title="安装 ntp 时间同步软件"></a>安装 ntp 时间同步软件</h4><pre class="line-numbers language-none"><code class="language-none">$ yum install -y ntp
+
+# 配置NTP，在master节点
+$ vim &#x2F;etc&#x2F;ntp.conf
+
+# 修改成如下配置，此处采用国家ntp时间同步中心，原博给的地址目前已无法同步：
+server ntp.ntsc.ac.cn prefer
+
+server 0.centos.pool.ntp.org iburst
+server 1.centos.pool.ntp.org iburst
+server 2.centos.pool.ntp.org iburst
+server 3.centos.pool.ntp.org iburst
+# 然后先进行一次时间同步：
+$ &#x2F;usr&#x2F;sbin&#x2F;ntpdate ntp.ntsc.ac.cn
+
+# 在salve1~3上，修改&#x2F;etc&#x2F;ntp.conf配置改为以下
+server master
+server 0.centos.pool.ntp.org iburst
+server 1.centos.pool.ntp.org iburst
+server 2.centos.pool.ntp.org iburst
+server 3.centos.pool.ntp.org iburst
+
+# 子节点需要定期同步主节点的时间，所以需要在各个子节点增加一个定时任务：
+# 每个从节点，从master节点同步时间
+$ ntpdate master
+
+# 做一个计划任务（从节点）
+$ crontab -e
+
+# 表示每3小时同步一次时间
+00 *&#x2F;3 * * * &#x2F;usr&#x2F;sbin&#x2F;ntpdate  master &gt;&gt; &#x2F;root&#x2F;ntpdate.log 2&gt;&amp;1
+
+# 查看计划任务
+$ crontab  -l
+
+# 所有子节点ntp加入开机启动
+$ chkconfig ntpd on
+
+# 最后所有服务器检查一下时间是否一致即可。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="二、CM与CDH安装"><a href="#二、CM与CDH安装" class="headerlink" title="二、CM与CDH安装"></a>二、CM与CDH安装</h2><h3 id="上传本地安装文件"><a href="#上传本地安装文件" class="headerlink" title="上传本地安装文件"></a>上传本地安装文件</h3><p>为了便于执行命令，在所有节点中创建~/soft/目录，并按照下表上传安装文件</p>
+<table>
+<thead>
+<tr>
+<th>服务器</th>
+<th>用途</th>
+<th>所需文件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>master</td>
+<td>主</td>
+<td>cloudera-manager-agent-5.16.2-1.cm5162.p0.7.el7.x86_64.rpm</br>cloudera-manager-daemons-5.16.2-1.cm5162.p0.7.el7.x86_64.rpm</br>cloudera-manager-server-5.16.2-1.cm5162.p0.7.el7.x86_64.rpm</br>cloudera-manager-server-db-2-5.16.2-1.cm5162.p0.7.el7.x86_64.rpm</br>enterprise-debuginfo-5.16.2-1.cm5162.p0.7.el7.x86_64.rpm</br>cloudera-manager-installer.bin</br>cloudera-manager.repo</br>CDH-5.16.2-1.cdh5.16.2.p0.8-el7.parcel</br>CDH-5.16.2-1.cdh5.16.2.p0.8-el7.parcel.sha1</td>
+</tr>
+<tr>
+<td>slave1~3</td>
+<td>从</td>
+<td>cloudera-manager-agent-5.16.2-1.cm5162.p0.7.el7.x86_64.rpm</br>cloudera-manager-daemons-5.16.2-1.cm5162.p0.7.el7.x86_64.rpm</br>cloudera-manager.repo</td>
+</tr>
+</tbody></table>
+<h3 id="master主机安装"><a href="#master主机安装" class="headerlink" title="master主机安装"></a>master主机安装</h3><pre class="line-numbers language-none"><code class="language-none"># 切换目录
+$ cd ~&#x2F;soft
+
+# 修改仓库文件cloudera-manager.repo，把版本号加上
+[cloudera-manager]
+name &#x3D; Cloudera Manager
+baseurl &#x3D; https:&#x2F;&#x2F;archive.cloudera.com&#x2F;cm5&#x2F;redhat&#x2F;7&#x2F;x86_64&#x2F;cm&#x2F;5.16.2&#x2F;  #主要改这里的版本号
+gpgkey &#x3D; https:&#x2F;&#x2F;archive.cloudera.com&#x2F;redhat&#x2F;cdh&#x2F;RPM-GPG-KEY-cloudera
+gpgcheck &#x3D; 1
+
+# 开始master的安装：
+$ yum localinstall --nogpgcheck *.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="从机安装"><a href="#从机安装" class="headerlink" title="从机安装"></a>从机安装</h3><pre class="line-numbers language-none"><code class="language-none"># 参照上述同样修改cloudera-manager.repo
+
+# 开始slave1~3的安装：
+$ yum localinstall --nogpgcheck *.rpm
+
+# 最后在slave1~3节点检查我们安装包
+$ yum list | grep cloudera<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="安装cloduera-manager二进制安装包"><a href="#安装cloduera-manager二进制安装包" class="headerlink" title="安装cloduera manager二进制安装包"></a>安装cloduera manager二进制安装包</h3><pre class="line-numbers language-none"><code class="language-none"># 进入master的cloudera-manager-installer.bin所在目录
+# 设置安装权限：
+$ chmod u+x cloudera-manager-installer.bin
+
+# 执行安装命令:
+$ .&#x2F;cloudera-manager-installer.bin
+
+# 如果提示需要删除配置文件，则备份文件
+$ mv &#x2F;etc&#x2F;cloudera-scm-server&#x2F;db.properties &#x2F;etc&#x2F;cloudera-scm-server&#x2F;db.properties.bak<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>重新执行安装命令，根据安装向导一路next。注意，如果之前master上没有手动安装rpm包此时就会联网下载，下载速度一般都较慢，太费时间。</p>
+<p>相同配置下顺利安装时间在1分钟内即可完成。<br>然后我们在web浏览器访问 <a target="_blank" rel="noopener" href="http://192.168.211.128:7180/">http://192.168.211.128:7180/</a><br>看是否能打开页面即可，先不要进行登录操作。</p>
+<blockquote>
+<p>注意：chd server服务器启动需要一些时间，等1分钟左右。</p>
+</blockquote>
+<p>如果能访问，那证明 cloudera manager安装正常。</p>
+<h3 id="CDH服务安装"><a href="#CDH服务安装" class="headerlink" title="CDH服务安装"></a>CDH服务安装</h3><h4 id="制作本地parcel"><a href="#制作本地parcel" class="headerlink" title="制作本地parcel"></a>制作本地parcel</h4><p>前面完成cloudera manager安装之后master会在/opt目录下生成cloudera文件夹，将之前下载好的CDH-*文件移动到parcel-repo文件夹中</p>
+<pre class="line-numbers language-none"><code class="language-none">$ mv CDH-5.16.2-1.cdh5.16.2.p0.8-el7.parcel &#x2F;opt&#x2F;cloudera&#x2F;parcel-repo&#x2F;
+$ mv CDH-5.16.2-1.cdh5.16.2.p0.8-el7.parcel.sha1 &#x2F;opt&#x2F;cloudera&#x2F;parcel-repo&#x2F;CDH-5.16.2-1.cdh5.16.2.p0.8-el7.parcel.sha  #注意这里有重命名
+
+# 将cloudera manager的用户授权给&#x2F;opt和日志目录：
+$ chown cloudera-scm.cloudera-scm  &#x2F;opt  -R
+$ chown cloudera-scm.cloudera-scm  &#x2F;var&#x2F;log&#x2F;cloudera-scm-agent -R
+
+# 重启cloudera-scm-server（重要）
+$ &#x2F;etc&#x2F;init.d&#x2F;cloudera-scm-server restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>重启速度较慢，约1分钟后访问 <a target="_blank" rel="noopener" href="http://192.168.211.128:7180/">http://192.168.211.128:7180/</a><br>登陆，账号密码 admin<br>选择免费版本，开始安装。</p>
+<h4 id="安装CDH"><a href="#安装CDH" class="headerlink" title="安装CDH"></a>安装CDH</h4><p>此步骤的安装图可参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/chenhai201/article/details/78856007">原博客</a></p>
+<ol>
+<li>为CDH集群安装指定主机<br> 框中输入：192.168.211.[128-131]<br> 搜索并全选添加继续</li>
+<li>集群安装<br> 默认Parcel安装，选择CDH版本为5.16.2，其余保持默认即可</li>
+<li>JDK安装<br> 我们已经安装了JDK8所以不勾选直接继续</li>
+<li>启用单用户模式<br> 暂时不使用单用户模式，简化安装</li>
+<li>提供SSH登录凭据<br> 使用root用户，所有主机接受相同密码，继续</li>
+<li>等待安装完成</li>
+<li>集群设置<br> 建议先安装核心Hadoop，后期有需要再进行添加</li>
+<li>数据库设置<br> 有独立的数据库可以配置独立数据库，没有的可以使用自带的嵌入式数据库，使用自带数据库建议将密码截一下图</li>
+<li>等待安装完成</li>
+</ol>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>其实根据目前这个配置运转CDH是比较勉强的，安装完进入页面后会发现一大堆的警告报警，可以选择提高服务器配置（<del>调低报警阈值</del>）来解决</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">CrissMagic</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://www.crissmagic.cn/articles/2019/11/08/1573204695172.html">https://www.crissmagic.cn/articles/2019/11/08/1573204695172.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">CrissMagic</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/CDH/">
+                                    <span class="chip bg-color">CDH</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">
+                                    <span class="chip bg-color">大数据</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">觉得不错的话可以请作者喝可乐</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.JPG" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.JPG" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/articles/2019/11/13/1573614610969.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="好物简评：AirPods Pro开箱与体验">
+                        
+                        <span class="card-title">好物简评：AirPods Pro开箱与体验</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%94%9F%E6%B4%BB%E5%88%86%E4%BA%AB/" class="post-category">
+                                    生活分享
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%80%E8%AF%84/">
+                        <span class="chip bg-color">简评</span>
+                    </a>
+                    
+                    <a href="/tags/AirPods/">
+                        <span class="chip bg-color">AirPods</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/articles/2019/10/30/1572398264251.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="CentOS7本地化搭建Easy-Mock">
+                        
+                        <span class="card-title">CentOS7本地化搭建Easy-Mock</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2/" class="post-category">
+                                    软件部署
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                        <span class="chip bg-color">后端</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/Mock/">
+                        <span class="chip bg-color">Mock</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">CrissMagic</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">55k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2019";
+                        var startMonth = "10";
+                        var startDate = "3";
+                        var startHour = "9";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn" target="_blank">渝ICP备19014189号-1</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/CrissMagic" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:whncriss@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
